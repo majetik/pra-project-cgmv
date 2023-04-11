@@ -114,7 +114,7 @@
             pictureBox3.Location = new Point(261, 332);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(229, 36);
+            pictureBox3.Size = new Size(250, 50);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 32;
             pictureBox3.TabStop = false;
@@ -191,6 +191,7 @@
             btnObrisiKolegij.TabIndex = 41;
             btnObrisiKolegij.Text = "Obriši kolegij";
             btnObrisiKolegij.UseVisualStyleBackColor = true;
+            btnObrisiKolegij.Click += btnObrisiKolegij_Click;
             // 
             // btnObrisiObavijesti
             // 
@@ -265,7 +266,7 @@
             pictureBox1.Location = new Point(12, 11);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 46);
+            pictureBox1.Size = new Size(100, 50);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -281,6 +282,7 @@
             Controls.Add(tbDobrodosli);
             Controls.Add(pictureBox1);
             Name = "Administrator_Pocetna";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Administrator_Pocetna";
             Load += Administrator_Pocetna_Load;
             pnlLinkovi.ResumeLayout(false);

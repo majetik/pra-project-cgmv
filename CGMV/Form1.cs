@@ -54,8 +54,6 @@ namespace CGMV
 
         private void ProvjeraKredencijala()
         {
-
-            // kreirat bolji foreach, dok je samo s jednom linijom u .txt radi, medutim 2 ili vise ne radi
             string[] lines = File.ReadAllLines(PATH);
             bool uspjeh = false;
 

@@ -33,6 +33,21 @@ namespace CGMV
 
         private void BtnDodajPredavača_Click(object sender, EventArgs e)
         {
+            
+            Osoba osobeucitavanje = new();
+            string[] file = File.ReadAllLines(PATH);
+            try
+            {
+                foreach (string line in file)
+                {
+                    osobeucitavanje = Osoba.ParseFromFileLine(line);
+                    predavaci.Add(osobeucitavanje);
+                }
+            }
+            catch (Exception me)
+            {
+                MessageBox.Show(me.Message);
+            }
             if (!formValid())
             {
                 return;

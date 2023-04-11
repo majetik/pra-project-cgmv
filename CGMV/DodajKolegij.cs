@@ -32,6 +32,20 @@ namespace CGMV
 
         private void BtnDodaj_Click(object sender, EventArgs e)
         {
+            Kolegij kolegijucitavanje = new();
+            string[] file = File.ReadAllLines(PATH);
+            try
+            {
+                foreach (string line in file)
+                {
+                    kolegijucitavanje = Kolegij.ParseFromFileLine(line);
+                    kolegiji.Add(kolegijucitavanje);
+                }
+            }
+            catch (Exception me)
+            {
+                MessageBox.Show(me.Message);
+            }
             if (!formValid())
             {
                 return;
