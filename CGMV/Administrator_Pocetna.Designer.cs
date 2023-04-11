@@ -29,265 +29,265 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrator_Pocetna));
-            this.pnlLinkovi = new System.Windows.Forms.Panel();
-            this.btnDodajKolegijuPredavaca = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.btnObrisiPredavaca = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnUrediPredavaca = new System.Windows.Forms.Button();
-            this.btnObavijesti = new System.Windows.Forms.Button();
-            this.btnDodajPredavaca = new System.Windows.Forms.Button();
-            this.btnDodajObavijesti = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.btnUrediObavijesti = new System.Windows.Forms.Button();
-            this.btnObrisiKolegij = new System.Windows.Forms.Button();
-            this.btnObrisiObavijesti = new System.Windows.Forms.Button();
-            this.btnUrediKolegij = new System.Windows.Forms.Button();
-            this.btnPopisSvihObavijesti = new System.Windows.Forms.Button();
-            this.btnDodajKolegij = new System.Windows.Forms.Button();
-            this.btnOdjava = new System.Windows.Forms.Button();
-            this.tbDobrodosli = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pnlLinkovi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.SuspendLayout();
+            pnlLinkovi = new Panel();
+            btnDodajKolegijuPredavaca = new Button();
+            button23 = new Button();
+            btnObrisiPredavaca = new Button();
+            pictureBox3 = new PictureBox();
+            btnUrediPredavaca = new Button();
+            btnObavijesti = new Button();
+            btnDodajPredavaca = new Button();
+            btnDodajObavijesti = new Button();
+            button19 = new Button();
+            btnUrediObavijesti = new Button();
+            btnObrisiKolegij = new Button();
+            btnObrisiObavijesti = new Button();
+            btnUrediKolegij = new Button();
+            btnPopisSvihObavijesti = new Button();
+            btnDodajKolegij = new Button();
+            btnOdjava = new Button();
+            tbDobrodosli = new TextBox();
+            pictureBox1 = new PictureBox();
+            pnlLinkovi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // pnlLinkovi
             // 
-            this.pnlLinkovi.Controls.Add(this.btnDodajKolegijuPredavaca);
-            this.pnlLinkovi.Controls.Add(this.button23);
-            this.pnlLinkovi.Controls.Add(this.btnObrisiPredavaca);
-            this.pnlLinkovi.Controls.Add(this.pictureBox3);
-            this.pnlLinkovi.Controls.Add(this.btnUrediPredavaca);
-            this.pnlLinkovi.Controls.Add(this.btnObavijesti);
-            this.pnlLinkovi.Controls.Add(this.btnDodajPredavaca);
-            this.pnlLinkovi.Controls.Add(this.btnDodajObavijesti);
-            this.pnlLinkovi.Controls.Add(this.button19);
-            this.pnlLinkovi.Controls.Add(this.btnUrediObavijesti);
-            this.pnlLinkovi.Controls.Add(this.btnObrisiKolegij);
-            this.pnlLinkovi.Controls.Add(this.btnObrisiObavijesti);
-            this.pnlLinkovi.Controls.Add(this.btnUrediKolegij);
-            this.pnlLinkovi.Controls.Add(this.btnPopisSvihObavijesti);
-            this.pnlLinkovi.Controls.Add(this.btnDodajKolegij);
-            this.pnlLinkovi.Location = new System.Drawing.Point(22, 62);
-            this.pnlLinkovi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pnlLinkovi.Name = "pnlLinkovi";
-            this.pnlLinkovi.Size = new System.Drawing.Size(750, 383);
-            this.pnlLinkovi.TabIndex = 10;
+            pnlLinkovi.Controls.Add(btnDodajKolegijuPredavaca);
+            pnlLinkovi.Controls.Add(button23);
+            pnlLinkovi.Controls.Add(btnObrisiPredavaca);
+            pnlLinkovi.Controls.Add(pictureBox3);
+            pnlLinkovi.Controls.Add(btnUrediPredavaca);
+            pnlLinkovi.Controls.Add(btnObavijesti);
+            pnlLinkovi.Controls.Add(btnDodajPredavaca);
+            pnlLinkovi.Controls.Add(btnDodajObavijesti);
+            pnlLinkovi.Controls.Add(button19);
+            pnlLinkovi.Controls.Add(btnUrediObavijesti);
+            pnlLinkovi.Controls.Add(btnObrisiKolegij);
+            pnlLinkovi.Controls.Add(btnObrisiObavijesti);
+            pnlLinkovi.Controls.Add(btnUrediKolegij);
+            pnlLinkovi.Controls.Add(btnPopisSvihObavijesti);
+            pnlLinkovi.Controls.Add(btnDodajKolegij);
+            pnlLinkovi.Location = new Point(22, 62);
+            pnlLinkovi.Margin = new Padding(3, 2, 3, 2);
+            pnlLinkovi.Name = "pnlLinkovi";
+            pnlLinkovi.Size = new Size(750, 383);
+            pnlLinkovi.TabIndex = 10;
             // 
             // btnDodajKolegijuPredavaca
             // 
-            this.btnDodajKolegijuPredavaca.Location = new System.Drawing.Point(19, 294);
-            this.btnDodajKolegijuPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDodajKolegijuPredavaca.Name = "btnDodajKolegijuPredavaca";
-            this.btnDodajKolegijuPredavaca.Size = new System.Drawing.Size(176, 22);
-            this.btnDodajKolegijuPredavaca.TabIndex = 46;
-            this.btnDodajKolegijuPredavaca.Text = "Dodaj kolegiju predavaca";
-            this.btnDodajKolegijuPredavaca.UseVisualStyleBackColor = true;
+            btnDodajKolegijuPredavaca.Location = new Point(19, 294);
+            btnDodajKolegijuPredavaca.Margin = new Padding(3, 2, 3, 2);
+            btnDodajKolegijuPredavaca.Name = "btnDodajKolegijuPredavaca";
+            btnDodajKolegijuPredavaca.Size = new Size(176, 22);
+            btnDodajKolegijuPredavaca.TabIndex = 46;
+            btnDodajKolegijuPredavaca.Text = "Dodaj kolegiju predavaca";
+            btnDodajKolegijuPredavaca.UseVisualStyleBackColor = true;
             // 
             // button23
             // 
-            this.button23.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button23.Location = new System.Drawing.Point(0, 22);
-            this.button23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(105, 28);
-            this.button23.TabIndex = 38;
-            this.button23.Text = "Kolegij";
-            this.button23.UseVisualStyleBackColor = true;
+            button23.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button23.Location = new Point(0, 22);
+            button23.Margin = new Padding(3, 2, 3, 2);
+            button23.Name = "button23";
+            button23.Size = new Size(105, 28);
+            button23.TabIndex = 38;
+            button23.Text = "Kolegij";
+            button23.UseVisualStyleBackColor = true;
             // 
             // btnObrisiPredavaca
             // 
-            this.btnObrisiPredavaca.Location = new System.Drawing.Point(19, 224);
-            this.btnObrisiPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnObrisiPredavaca.Name = "btnObrisiPredavaca";
-            this.btnObrisiPredavaca.Size = new System.Drawing.Size(120, 22);
-            this.btnObrisiPredavaca.TabIndex = 45;
-            this.btnObrisiPredavaca.Text = "Obriši predavača";
-            this.btnObrisiPredavaca.UseVisualStyleBackColor = true;
-            this.btnObrisiPredavaca.Click += new System.EventHandler(this.BtnObrisiPredavaca_Click);
+            btnObrisiPredavaca.Location = new Point(19, 224);
+            btnObrisiPredavaca.Margin = new Padding(3, 2, 3, 2);
+            btnObrisiPredavaca.Name = "btnObrisiPredavaca";
+            btnObrisiPredavaca.Size = new Size(120, 22);
+            btnObrisiPredavaca.TabIndex = 45;
+            btnObrisiPredavaca.Text = "Obriši predavača";
+            btnObrisiPredavaca.UseVisualStyleBackColor = true;
+            btnObrisiPredavaca.Click += BtnObrisiPredavaca_Click;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(261, 332);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(229, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 32;
-            this.pictureBox3.TabStop = false;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(261, 332);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(229, 36);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 32;
+            pictureBox3.TabStop = false;
             // 
             // btnUrediPredavaca
             // 
-            this.btnUrediPredavaca.Location = new System.Drawing.Point(19, 250);
-            this.btnUrediPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUrediPredavaca.Name = "btnUrediPredavaca";
-            this.btnUrediPredavaca.Size = new System.Drawing.Size(120, 22);
-            this.btnUrediPredavaca.TabIndex = 44;
-            this.btnUrediPredavaca.Text = "Uredi predavača";
-            this.btnUrediPredavaca.UseVisualStyleBackColor = true;
+            btnUrediPredavaca.Location = new Point(19, 250);
+            btnUrediPredavaca.Margin = new Padding(3, 2, 3, 2);
+            btnUrediPredavaca.Name = "btnUrediPredavaca";
+            btnUrediPredavaca.Size = new Size(120, 22);
+            btnUrediPredavaca.TabIndex = 44;
+            btnUrediPredavaca.Text = "Uredi predavača";
+            btnUrediPredavaca.UseVisualStyleBackColor = true;
             // 
             // btnObavijesti
             // 
-            this.btnObavijesti.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnObavijesti.Location = new System.Drawing.Point(526, 22);
-            this.btnObavijesti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnObavijesti.Name = "btnObavijesti";
-            this.btnObavijesti.Size = new System.Drawing.Size(105, 28);
-            this.btnObavijesti.TabIndex = 33;
-            this.btnObavijesti.Text = "Obavijesti";
-            this.btnObavijesti.UseVisualStyleBackColor = true;
+            btnObavijesti.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnObavijesti.Location = new Point(526, 22);
+            btnObavijesti.Margin = new Padding(3, 2, 3, 2);
+            btnObavijesti.Name = "btnObavijesti";
+            btnObavijesti.Size = new Size(105, 28);
+            btnObavijesti.TabIndex = 33;
+            btnObavijesti.Text = "Obavijesti";
+            btnObavijesti.UseVisualStyleBackColor = true;
             // 
             // btnDodajPredavaca
             // 
-            this.btnDodajPredavaca.Location = new System.Drawing.Point(19, 197);
-            this.btnDodajPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDodajPredavaca.Name = "btnDodajPredavaca";
-            this.btnDodajPredavaca.Size = new System.Drawing.Size(120, 22);
-            this.btnDodajPredavaca.TabIndex = 43;
-            this.btnDodajPredavaca.Text = "Dodaj predavača";
-            this.btnDodajPredavaca.UseVisualStyleBackColor = true;
-            this.btnDodajPredavaca.Click += new System.EventHandler(this.BtnDodajPredavaca_Click);
+            btnDodajPredavaca.Location = new Point(19, 197);
+            btnDodajPredavaca.Margin = new Padding(3, 2, 3, 2);
+            btnDodajPredavaca.Name = "btnDodajPredavaca";
+            btnDodajPredavaca.Size = new Size(120, 22);
+            btnDodajPredavaca.TabIndex = 43;
+            btnDodajPredavaca.Text = "Dodaj predavača";
+            btnDodajPredavaca.UseVisualStyleBackColor = true;
+            btnDodajPredavaca.Click += BtnDodajPredavaca_Click;
             // 
             // btnDodajObavijesti
             // 
-            this.btnDodajObavijesti.Location = new System.Drawing.Point(549, 61);
-            this.btnDodajObavijesti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDodajObavijesti.Name = "btnDodajObavijesti";
-            this.btnDodajObavijesti.Size = new System.Drawing.Size(120, 22);
-            this.btnDodajObavijesti.TabIndex = 34;
-            this.btnDodajObavijesti.Text = "Dodaj obavijesti";
-            this.btnDodajObavijesti.UseVisualStyleBackColor = true;
+            btnDodajObavijesti.Location = new Point(549, 61);
+            btnDodajObavijesti.Margin = new Padding(3, 2, 3, 2);
+            btnDodajObavijesti.Name = "btnDodajObavijesti";
+            btnDodajObavijesti.Size = new Size(120, 22);
+            btnDodajObavijesti.TabIndex = 34;
+            btnDodajObavijesti.Text = "Dodaj obavijesti";
+            btnDodajObavijesti.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
-            this.button19.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button19.Location = new System.Drawing.Point(0, 158);
-            this.button19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(105, 28);
-            this.button19.TabIndex = 42;
-            this.button19.Text = "Predavač";
-            this.button19.UseVisualStyleBackColor = true;
+            button19.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button19.Location = new Point(0, 158);
+            button19.Margin = new Padding(3, 2, 3, 2);
+            button19.Name = "button19";
+            button19.Size = new Size(105, 28);
+            button19.TabIndex = 42;
+            button19.Text = "Predavač";
+            button19.UseVisualStyleBackColor = true;
             // 
             // btnUrediObavijesti
             // 
-            this.btnUrediObavijesti.Location = new System.Drawing.Point(549, 113);
-            this.btnUrediObavijesti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUrediObavijesti.Name = "btnUrediObavijesti";
-            this.btnUrediObavijesti.Size = new System.Drawing.Size(120, 22);
-            this.btnUrediObavijesti.TabIndex = 35;
-            this.btnUrediObavijesti.Text = "Uredi obavijesti";
-            this.btnUrediObavijesti.UseVisualStyleBackColor = true;
+            btnUrediObavijesti.Location = new Point(549, 113);
+            btnUrediObavijesti.Margin = new Padding(3, 2, 3, 2);
+            btnUrediObavijesti.Name = "btnUrediObavijesti";
+            btnUrediObavijesti.Size = new Size(120, 22);
+            btnUrediObavijesti.TabIndex = 35;
+            btnUrediObavijesti.Text = "Uredi obavijesti";
+            btnUrediObavijesti.UseVisualStyleBackColor = true;
             // 
             // btnObrisiKolegij
             // 
-            this.btnObrisiKolegij.Location = new System.Drawing.Point(19, 87);
-            this.btnObrisiKolegij.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnObrisiKolegij.Name = "btnObrisiKolegij";
-            this.btnObrisiKolegij.Size = new System.Drawing.Size(120, 22);
-            this.btnObrisiKolegij.TabIndex = 41;
-            this.btnObrisiKolegij.Text = "Obriši kolegij";
-            this.btnObrisiKolegij.UseVisualStyleBackColor = true;
+            btnObrisiKolegij.Location = new Point(19, 87);
+            btnObrisiKolegij.Margin = new Padding(3, 2, 3, 2);
+            btnObrisiKolegij.Name = "btnObrisiKolegij";
+            btnObrisiKolegij.Size = new Size(120, 22);
+            btnObrisiKolegij.TabIndex = 41;
+            btnObrisiKolegij.Text = "Obriši kolegij";
+            btnObrisiKolegij.UseVisualStyleBackColor = true;
             // 
             // btnObrisiObavijesti
             // 
-            this.btnObrisiObavijesti.Location = new System.Drawing.Point(549, 87);
-            this.btnObrisiObavijesti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnObrisiObavijesti.Name = "btnObrisiObavijesti";
-            this.btnObrisiObavijesti.Size = new System.Drawing.Size(120, 22);
-            this.btnObrisiObavijesti.TabIndex = 36;
-            this.btnObrisiObavijesti.Text = "Obriši obavijesti";
-            this.btnObrisiObavijesti.UseVisualStyleBackColor = true;
+            btnObrisiObavijesti.Location = new Point(549, 87);
+            btnObrisiObavijesti.Margin = new Padding(3, 2, 3, 2);
+            btnObrisiObavijesti.Name = "btnObrisiObavijesti";
+            btnObrisiObavijesti.Size = new Size(120, 22);
+            btnObrisiObavijesti.TabIndex = 36;
+            btnObrisiObavijesti.Text = "Obriši obavijesti";
+            btnObrisiObavijesti.UseVisualStyleBackColor = true;
             // 
             // btnUrediKolegij
             // 
-            this.btnUrediKolegij.Location = new System.Drawing.Point(19, 113);
-            this.btnUrediKolegij.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUrediKolegij.Name = "btnUrediKolegij";
-            this.btnUrediKolegij.Size = new System.Drawing.Size(120, 22);
-            this.btnUrediKolegij.TabIndex = 40;
-            this.btnUrediKolegij.Text = "Uredi kolegij";
-            this.btnUrediKolegij.UseVisualStyleBackColor = true;
+            btnUrediKolegij.Location = new Point(19, 113);
+            btnUrediKolegij.Margin = new Padding(3, 2, 3, 2);
+            btnUrediKolegij.Name = "btnUrediKolegij";
+            btnUrediKolegij.Size = new Size(120, 22);
+            btnUrediKolegij.TabIndex = 40;
+            btnUrediKolegij.Text = "Uredi kolegij";
+            btnUrediKolegij.UseVisualStyleBackColor = true;
             // 
             // btnPopisSvihObavijesti
             // 
-            this.btnPopisSvihObavijesti.Location = new System.Drawing.Point(549, 176);
-            this.btnPopisSvihObavijesti.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnPopisSvihObavijesti.Name = "btnPopisSvihObavijesti";
-            this.btnPopisSvihObavijesti.Size = new System.Drawing.Size(143, 22);
-            this.btnPopisSvihObavijesti.TabIndex = 37;
-            this.btnPopisSvihObavijesti.Text = "Popis svih obavijesti";
-            this.btnPopisSvihObavijesti.UseVisualStyleBackColor = true;
+            btnPopisSvihObavijesti.Location = new Point(549, 176);
+            btnPopisSvihObavijesti.Margin = new Padding(3, 2, 3, 2);
+            btnPopisSvihObavijesti.Name = "btnPopisSvihObavijesti";
+            btnPopisSvihObavijesti.Size = new Size(143, 22);
+            btnPopisSvihObavijesti.TabIndex = 37;
+            btnPopisSvihObavijesti.Text = "Popis svih obavijesti";
+            btnPopisSvihObavijesti.UseVisualStyleBackColor = true;
             // 
             // btnDodajKolegij
             // 
-            this.btnDodajKolegij.Location = new System.Drawing.Point(19, 61);
-            this.btnDodajKolegij.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDodajKolegij.Name = "btnDodajKolegij";
-            this.btnDodajKolegij.Size = new System.Drawing.Size(120, 22);
-            this.btnDodajKolegij.TabIndex = 39;
-            this.btnDodajKolegij.Text = "Dodaj kolegij";
-            this.btnDodajKolegij.UseVisualStyleBackColor = true;
+            btnDodajKolegij.Location = new Point(19, 61);
+            btnDodajKolegij.Margin = new Padding(3, 2, 3, 2);
+            btnDodajKolegij.Name = "btnDodajKolegij";
+            btnDodajKolegij.Size = new Size(120, 22);
+            btnDodajKolegij.TabIndex = 39;
+            btnDodajKolegij.Text = "Dodaj kolegij";
+            btnDodajKolegij.UseVisualStyleBackColor = true;
+            btnDodajKolegij.Click += btnDodajKolegij_Click;
             // 
             // btnOdjava
             // 
-            this.btnOdjava.BackColor = System.Drawing.Color.Black;
-            this.btnOdjava.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnOdjava.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnOdjava.Location = new System.Drawing.Point(690, 24);
-            this.btnOdjava.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnOdjava.Name = "btnOdjava";
-            this.btnOdjava.Size = new System.Drawing.Size(82, 30);
-            this.btnOdjava.TabIndex = 9;
-            this.btnOdjava.Text = "Odjava";
-            this.btnOdjava.UseVisualStyleBackColor = false;
-            this.btnOdjava.Click += new System.EventHandler(this.BtnOdjava_Click);
+            btnOdjava.BackColor = Color.Black;
+            btnOdjava.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnOdjava.ForeColor = SystemColors.ControlLightLight;
+            btnOdjava.Location = new Point(690, 24);
+            btnOdjava.Margin = new Padding(3, 2, 3, 2);
+            btnOdjava.Name = "btnOdjava";
+            btnOdjava.Size = new Size(82, 30);
+            btnOdjava.TabIndex = 9;
+            btnOdjava.Text = "Odjava";
+            btnOdjava.UseVisualStyleBackColor = false;
+            btnOdjava.Click += BtnOdjava_Click;
             // 
             // tbDobrodosli
             // 
-            this.tbDobrodosli.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbDobrodosli.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDobrodosli.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDobrodosli.Location = new System.Drawing.Point(265, 22);
-            this.tbDobrodosli.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbDobrodosli.Name = "tbDobrodosli";
-            this.tbDobrodosli.Size = new System.Drawing.Size(255, 32);
-            this.tbDobrodosli.TabIndex = 8;
-            this.tbDobrodosli.Text = "Dobro došli - Administrator";
+            tbDobrodosli.BackColor = SystemColors.MenuText;
+            tbDobrodosli.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            tbDobrodosli.ForeColor = SystemColors.Window;
+            tbDobrodosli.Location = new Point(265, 22);
+            tbDobrodosli.Margin = new Padding(3, 2, 3, 2);
+            tbDobrodosli.Name = "tbDobrodosli";
+            tbDobrodosli.Size = new Size(255, 32);
+            tbDobrodosli.TabIndex = 8;
+            tbDobrodosli.Text = "Dobro došli - Administrator";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(109, 46);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(12, 11);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(109, 46);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
             // 
             // Administrator_Pocetna
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.pnlLinkovi);
-            this.Controls.Add(this.btnOdjava);
-            this.Controls.Add(this.tbDobrodosli);
-            this.Controls.Add(this.pictureBox1);
-            this.Name = "Administrator_Pocetna";
-            this.Text = "Administrator_Pocetna";
-            this.Load += new System.EventHandler(this.Administrator_Pocetna_Load);
-            this.pnlLinkovi.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(784, 461);
+            Controls.Add(pnlLinkovi);
+            Controls.Add(btnOdjava);
+            Controls.Add(tbDobrodosli);
+            Controls.Add(pictureBox1);
+            Name = "Administrator_Pocetna";
+            Text = "Administrator_Pocetna";
+            Load += Administrator_Pocetna_Load;
+            pnlLinkovi.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

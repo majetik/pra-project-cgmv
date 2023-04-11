@@ -66,5 +66,13 @@ namespace CGMV
 
             this.Close();
         }
+
+        private void btnDodajKolegij_Click(object sender, EventArgs e)
+        {
+            DodajKolegij dodajKolegij = new();
+            dodajKolegij.Show();
+            dodajKolegij.BringToFront();
+            this.Close();
+        }
     }
 }
