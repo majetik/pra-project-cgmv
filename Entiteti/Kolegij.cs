@@ -8,6 +8,7 @@ namespace Entiteti
 {
     public class Kolegij
     {
+        private const char DEL = '|';
         public string Naziv { get; set; }
 
         //Sifra string u slucaju da zapocne s "0"
@@ -29,6 +30,15 @@ namespace Entiteti
         {
             return base.Equals(obj);
         }
-
+        public string FormatForFileLine() => $"{Naziv}{DEL}{Sifra}";
+        public static Kolegij ParseFromFileLine(string line)
+        {
+            string[] details = line.Split(DEL);
+            return new Kolegij()
+            {
+                Naziv = details[0],
+                Sifra = details[1],
+            };
+        }
     }
 }
