@@ -74,5 +74,13 @@ namespace CGMV
             dodajKolegij.BringToFront();
             this.Close();
         }
+
+        private void btnObrisiKolegij_Click(object sender, EventArgs e)
+        {
+            ObrisiKolegij obrisiKolegij = new();
+            obrisiKolegij.Show();
+            obrisiKolegij.BringToFront();
+            this.Close();
+        }
     }
 }
