@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\ProjektCGMV\\pra-project-cgmv\\CGMV\\CGMV.csproj",
+      "projectUniqueName": "C:\\Users\\Leonardo\\Desktop\\A\\pra-project-cgmv\\CGMV\\CGMV.csproj",
       "projectName": "CGMV",
-      "projectPath": "C:\\Users\\Leonardo\\Desktop\\ProjektCGMV\\pra-project-cgmv\\CGMV\\CGMV.csproj",
+      "projectPath": "C:\\Users\\Leonardo\\Desktop\\A\\pra-project-cgmv\\CGMV\\CGMV.csproj",
       "packagesPath": "C:\\Users\\Leonardo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Leonardo\\Desktop\\ProjektCGMV\\pra-project-cgmv\\CGMV\\obj\\",
+      "outputPath": "C:\\Users\\Leonardo\\Desktop\\A\\pra-project-cgmv\\CGMV\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Leonardo\\Desktop\\ProjektCGMV\\pra-project-cgmv\\Entiteti\\Entiteti.csproj": {
-              "projectPath": "C:\\Users\\Leonardo\\Desktop\\ProjektCGMV\\pra-project-cgmv\\Entiteti\\Entiteti.csproj"
+            "C:\\Users\\Leonardo\\Desktop\\A\\pra-project-cgmv\\Entiteti\\Entiteti.csproj": {
+              "projectPath": "C:\\Users\\Leonardo\\Desktop\\A\\pra-project-cgmv\\Entiteti\\Entiteti.csproj"
             }
           }
         }

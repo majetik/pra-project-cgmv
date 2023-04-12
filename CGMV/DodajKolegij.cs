@@ -32,19 +32,19 @@ namespace CGMV
 
         private void BtnDodaj_Click(object sender, EventArgs e)
         {
-            Kolegij kolegijucitavanje = new();
+            Kolegij kolegij1 = new Kolegij();
             string[] file = File.ReadAllLines(PATH);
             try
             {
                 foreach (string line in file)
                 {
-                    kolegijucitavanje = Kolegij.ParseFromFileLine(line);
-                    kolegiji.Add(kolegijucitavanje);
+                    kolegij1 = Kolegij.ParseFromFileLine(line);
+                    kolegiji.Add(kolegij1);
                 }
             }
-            catch (Exception me)
+            catch (Exception em)
             {
-                MessageBox.Show(me.Message);
+                MessageBox.Show(em.Message);
             }
             if (!formValid())
             {
@@ -60,11 +60,10 @@ namespace CGMV
                 Sifra = TBSifraKolegija.Text
             };
             kolegiji.Add(kolegij);
-
             try
             {
                 File.WriteAllLines(PATH, kolegiji.Select(k => k.FormatForFileLine()));
-                this.Refresh();
+                //this.Refresh();
             }
             catch (Exception me)
             {

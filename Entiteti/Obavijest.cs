@@ -9,15 +9,15 @@ namespace Entiteti
     public class Obavijest
     {
         public string Naslov { get; set; }
-        public string Sadrzaj { get; set; }
+        public string Opis { get; set; }
+        public Osoba Autor { get; set; }
         public DateTime DatumObjave { get; set; }
         public DateTime DatumIsteka { get; set; }
-        public Osoba Autor { get; set; }
 
         //mozda nepotrebno
         public override string ToString()
         {
-            return $"{Naslov}: {Sadrzaj}";
+            return $"{Naslov}: {Opis}";
         }
 
         public override bool Equals(object? obj)

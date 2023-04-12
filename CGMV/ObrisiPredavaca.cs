@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entiteti;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace CGMV
     public partial class ObrisiPredavaca : Form
     {
         private const string PATH = "ListaPredavaca.txt";
+        private const char SEPARATOR = '|';
         public ObrisiPredavaca()
         {
             InitializeComponent();
@@ -20,23 +22,13 @@ namespace CGMV
 
         private void ObrisiPredavaca_Load(object sender, EventArgs e)
         {
-            List<string> predavaci = new List<string>();
-
-            using (StreamReader sr = new StreamReader(PATH))
+            List<Osoba> osobe = new List<Osoba>();
+            string[] sveosobe = File.ReadAllLines(PATH);
+            foreach (var item in sveosobe)
             {
-                while (!sr.EndOfStream)
-                {
-                    string linija = sr.ReadLine();
-                    string[] detalji = linija.Split('|');
-
-                    string ime = detalji[0];
-                    string prezime = detalji[1];
-
-                    predavaci.Add($"{ime} {prezime}");
-                }
+                osobe.Add(Osoba.ParseFromFileLine(item));
             }
-
-            cbPredavaci.DataSource = predavaci;
+            cbPredavaci.DataSource = osobe;
         }
 
         private void BtnNatrag_Click(object sender, EventArgs e)
@@ -56,7 +48,7 @@ namespace CGMV
             StringBuilder noviKontent = new StringBuilder();
             foreach (string line in linije)
             {
-                string[] dijelovi = line.Split('|');
+                string[] dijelovi = line.Split(SEPARATOR);
                 if (!(dijelovi[0] == cbPredavaci.Text && dijelovi[1] == cbPredavaci.Text))
                 {
                     noviKontent.AppendLine(line); // Add the line to the new contents.

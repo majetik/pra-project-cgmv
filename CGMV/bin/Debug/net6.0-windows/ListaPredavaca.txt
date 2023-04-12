@@ -1,0 +1,2 @@
+Leonardo|Vucenovic|leo@gmail.com|leo|False
+Karlo|Majetic|karlo1@gmail.com|karlo|False

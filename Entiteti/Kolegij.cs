@@ -9,13 +9,9 @@ namespace Entiteti
     public class Kolegij
     {
         private const char DEL = '|';
-        public string Naziv { get; set; }
-
-        //Sifra string u slucaju da zapocne s "0"
-        public string Sifra { get; set; }
+        public string Naziv { get; set; } = "";
+        public string Sifra { get; set; } = "";
         public Osoba Predavac { get; set; }
-
-        //mozda ne treba
         public override string ToString()
         {
             return $"{Naziv}, sifra: {Sifra}";

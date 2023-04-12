@@ -29,6 +29,7 @@ namespace CGMV
 
         private void UrediPredavaca_Load(object sender, EventArgs e)
         {
+            //Ante ovdje negdje ne bug, pogledaj kako sam ja napravio za kolegij pa si uzmi kod
             List<string> predavaci = new List<string>();
 
             using (StreamReader sr = new StreamReader(PATH))

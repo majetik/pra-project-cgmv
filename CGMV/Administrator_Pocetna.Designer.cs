@@ -160,6 +160,7 @@
             btnDodajObavijesti.TabIndex = 34;
             btnDodajObavijesti.Text = "Dodaj obavijesti";
             btnDodajObavijesti.UseVisualStyleBackColor = true;
+            btnDodajObavijesti.Click += btnDodajObavijesti_Click;
             // 
             // button19
             // 
