@@ -82,5 +82,13 @@ namespace CGMV
             obrisiKolegij.BringToFront();
             this.Close();
         }
+
+        private void btnDodajObavijesti_Click(object sender, EventArgs e)
+        {
+            DodajObavijest dodajObavijest = new();
+            dodajObavijest.Show();
+            dodajObavijest.BringToFront();
+            this.Close();
+        }
     }
 }

@@ -33,20 +33,19 @@ namespace CGMV
 
         private void BtnDodajPredavača_Click(object sender, EventArgs e)
         {
-            
-            Osoba osobeucitavanje = new();
+            Osoba osobaa = new Osoba();
             string[] file = File.ReadAllLines(PATH);
             try
             {
                 foreach (string line in file)
                 {
-                    osobeucitavanje = Osoba.ParseFromFileLine(line);
-                    predavaci.Add(osobeucitavanje);
+                    osobaa = Osoba.ParseFromFileLine(line);
+                    predavaci.Add(osobaa);
                 }
             }
-            catch (Exception me)
+            catch (Exception em)
             {
-                MessageBox.Show(me.Message);
+                MessageBox.Show(em.Message);
             }
             if (!formValid())
             {
@@ -61,9 +60,7 @@ namespace CGMV
                 Lozinka = tbLozinka.Text,
                 JeAdmin = false
             };
-
             predavaci.Add(osoba);
-
             try
             {
                 File.WriteAllLines(PATH, predavaci.Select(p => p.FormatForFileLine()));
@@ -73,6 +70,7 @@ namespace CGMV
             {
                 MessageBox.Show(ex.Message);
             }
+            MessageBox.Show("Predavač uspješno dodan!");
         }
 
         private bool formValid()

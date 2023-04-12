@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entiteti;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace CGMV
     public partial class ObrisiKolegij : Form
     {
         private const string PATH = "ListaKolegija.txt";
+        private const char SEPARATOR = '|';
         public ObrisiKolegij()
         {
             InitializeComponent();
@@ -30,22 +32,12 @@ namespace CGMV
 
         private void ObrisiKolegij_Load(object sender, EventArgs e)
         {
-            List<string> kolegiji = new List<string>();
-
-            using (StreamReader sr = new StreamReader(PATH))
+            List<Kolegij> kolegiji = new List<Kolegij>();
+            string[] svikolegiji = File.ReadAllLines(PATH);
+            foreach (var item in svikolegiji)
             {
-                while (!sr.EndOfStream)
-                {
-                    string linija = sr.ReadLine();
-                    string[] detalji = linija.Split('|');
-
-                    string naziv = detalji[0];
-                    string sifra = detalji[1];
-
-                    kolegiji.Add($"{naziv} {sifra}");
-                }
+                kolegiji.Add(Kolegij.ParseFromFileLine(item));
             }
-
             CMOdaberiKolegij.DataSource = kolegiji;
         }
 
@@ -56,7 +48,7 @@ namespace CGMV
             StringBuilder noviKontent = new StringBuilder();
             foreach (string line in linije)
             {
-                string[] dijelovi = line.Split('|');
+                string[] dijelovi = line.Split(SEPARATOR);
                 if (!(dijelovi[0] == CMOdaberiKolegij.Text && dijelovi[1] == CMOdaberiKolegij.Text))
                 {
                     noviKontent.AppendLine(line);
