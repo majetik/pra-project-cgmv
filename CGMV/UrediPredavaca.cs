@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entiteti;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -31,21 +32,46 @@ namespace CGMV
         {
             List<string> predavaci = new List<string>();
 
-            using (StreamReader sr = new StreamReader(PATH))
+            try
             {
-                while (!sr.EndOfStream)
+                using (StreamReader sr = new StreamReader(PATH))
                 {
-                    string linija = sr.ReadLine();
-                    string[] detalji = linija.Split('|');
+                    while (!sr.EndOfStream)
+                    {
+                        string linija = sr.ReadLine();
+                        string[] detalji = linija.Split('|');
 
-                    string ime = detalji[0];
-                    string prezime = detalji[1];
+                        string ime = detalji[0];
+                        string prezime = detalji[1];
 
-                    predavaci.Add($"{ime} {prezime}");
+                        predavaci.Add($"{ime} {prezime}");
+                    }
                 }
-            }
+                cbPredavaci.DataSource = predavaci;
 
-            cbPredavaci.DataSource = predavaci;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnNastavi_Click(object sender, EventArgs e)
+        {
+            if(cbPredavaci.SelectedIndex == -1)
+            {
+                MessageBox.Show("Odaberite predavača");
+            }
+            else
+            {
+                string odabraniPredavac = cbPredavaci.SelectedItem.ToString();
+
+                UrediPredavacaGlavnaForma urediOdabranogPredavaca = new UrediPredavacaGlavnaForma(odabraniPredavac);
+                urediOdabranogPredavaca.Show();
+                urediOdabranogPredavaca.BringToFront();
+
+                this.Hide();
+            }
         }
     }
 }

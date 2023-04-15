@@ -1,0 +1,12 @@
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\bin\Debug\net6.0\Entiteti.deps.json
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\bin\Debug\net6.0\Entiteti.dll
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\bin\Debug\net6.0\Entiteti.pdb
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfo.cs
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.dll
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\refint\Entiteti.dll
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\Entiteti.pdb
+C:\Users\LENOVO\Desktop\Pra_Project\Entiteti\obj\Debug\net6.0\ref\Entiteti.dll

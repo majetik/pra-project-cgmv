@@ -1,0 +1,3 @@
+Pero|Peric|pero@mail.com|123|false
+Ana|Anic|ana@mail.com|123|false
+Frane|Franic|frane@mail.com|123|false

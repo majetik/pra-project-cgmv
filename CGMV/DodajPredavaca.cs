@@ -33,7 +33,11 @@ namespace CGMV
 
         private void BtnDodajPredavača_Click(object sender, EventArgs e)
         {
-            
+            if (!formValid())
+            {
+                return;
+            }
+
             Osoba osobeucitavanje = new();
             string[] file = File.ReadAllLines(PATH);
             try
@@ -47,10 +51,6 @@ namespace CGMV
             catch (Exception me)
             {
                 MessageBox.Show(me.Message);
-            }
-            if (!formValid())
-            {
-                return;
             }
 
             Osoba osoba = new()
