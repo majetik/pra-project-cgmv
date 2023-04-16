@@ -29,24 +29,51 @@ namespace CGMV
 
         private void UrediPredavaca_Load(object sender, EventArgs e)
         {
-            //Ante ovdje negdje ne bug, pogledaj kako sam ja napravio za kolegij pa si uzmi kod
             List<string> predavaci = new List<string>();
 
-            using (StreamReader sr = new StreamReader(PATH))
+            try
             {
-                while (!sr.EndOfStream)
+                using (StreamReader sr = new StreamReader(PATH))
                 {
-                    string linija = sr.ReadLine();
-                    string[] detalji = linija.Split('|');
+                    while (!sr.EndOfStream)
+                    {
 
-                    string ime = detalji[0];
-                    string prezime = detalji[1];
+                        string linija = sr.ReadLine();
+                        string[] detalji = linija.Split('|');
 
-                    predavaci.Add($"{ime} {prezime}");
+                        string ime = detalji[0];
+                        string prezime = detalji[1];
+
+                        predavaci.Add($"{ime} {prezime}");
+
+                    }
+
+                    cbPredavaci.DataSource = predavaci;
+
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
-            cbPredavaci.DataSource = predavaci;
+        private void btnNastavi_Click(object sender, EventArgs e)
+        {
+            if (cbPredavaci.SelectedIndex == -1)
+            {
+                MessageBox.Show("Odaberite predavača");
+            }
+            else
+            {
+                string odabraniPredavac = cbPredavaci.SelectedItem.ToString();
+
+                UrediPredavacaGlavnaForma urediOdabranogPredavaca = new UrediPredavacaGlavnaForma(odabraniPredavac);
+                urediOdabranogPredavaca.Show();
+                urediOdabranogPredavaca.BringToFront();
+
+                this.Hide();
+            }
         }
     }
 }

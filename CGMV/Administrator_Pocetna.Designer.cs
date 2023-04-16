@@ -128,6 +128,7 @@
             btnUrediPredavaca.TabIndex = 44;
             btnUrediPredavaca.Text = "Uredi predavača";
             btnUrediPredavaca.UseVisualStyleBackColor = true;
+            btnUrediPredavaca.Click += BtnUrediPredavaca_Click;
             // 
             // btnObavijesti
             // 

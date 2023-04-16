@@ -148,6 +148,7 @@
             btnNastavi.TabIndex = 63;
             btnNastavi.Text = "Nastavi";
             btnNastavi.UseVisualStyleBackColor = true;
+            btnNastavi.Click += btnNastavi_Click;
             // 
             // btnNatrag
             // 
@@ -159,6 +160,7 @@
             btnNatrag.TabIndex = 62;
             btnNatrag.Text = "Natrag";
             btnNatrag.UseVisualStyleBackColor = true;
+            btnNatrag.Click += btnNatrag_Click;
             // 
             // pictureBox3
             // 

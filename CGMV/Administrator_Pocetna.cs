@@ -90,5 +90,13 @@ namespace CGMV
             dodajObavijest.BringToFront();
             this.Close();
         }
+
+        private void BtnUrediPredavaca_Click(object sender, EventArgs e)
+        {
+            UrediPredavaca urediPredavaca = new();
+            urediPredavaca.Show();
+            urediPredavaca.BringToFront();
+            this.Close();
+        }
     }
 }

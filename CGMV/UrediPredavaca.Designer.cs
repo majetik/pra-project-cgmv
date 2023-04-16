@@ -50,6 +50,7 @@
             btnNastavi.TabIndex = 52;
             btnNastavi.Text = "Nastavi";
             btnNastavi.UseVisualStyleBackColor = true;
+            btnNastavi.Click += btnNastavi_Click;
             // 
             // btnNatrag
             // 
