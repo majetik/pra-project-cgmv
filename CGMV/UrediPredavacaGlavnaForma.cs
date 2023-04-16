@@ -12,6 +12,8 @@ namespace CGMV
 {
     public partial class UrediPredavacaGlavnaForma : Form
     {
+        //Commit test comment
+
         private const string PATH = "ListaPredavaca.txt";
         private string predavac;
 
