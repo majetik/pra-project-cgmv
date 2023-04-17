@@ -12,7 +12,6 @@ namespace CGMV
 {
     public partial class UrediPredavacaGlavnaForma : Form
     {
-        //Commit test comment
 
         private const string PATH = "ListaPredavaca.txt";
         private string predavac;
@@ -58,11 +57,10 @@ namespace CGMV
             string prezime = tbPrezime.Text;
             string email = tbEmail.Text;
             string lozinka = tbLozinka.Text;
-            bool JeAdmin = false;
 
             try
             {
-                AzurirajPredavaca(ime, prezime, email, lozinka, JeAdmin);
+                AzurirajPredavaca(ime, prezime, email, lozinka);
 
             }
             catch (Exception ex)
@@ -78,8 +76,11 @@ namespace CGMV
 
         //Metoda ne radi ispravno!! Problem kod spremanja u fajl
         // prvo projveravamo da li su sva polja popunjena, ako nisu pojavljuje se MessageBox. 
-        private void AzurirajPredavaca(string ime, string prezime, string email, string lozinka, bool JeAdmin)
+        private void AzurirajPredavaca(string ime, string prezime, string email, string lozinka)
         {
+            string[] predavacImePrezime = predavac.Split(' ');
+            string predavacIme = predavacImePrezime[0];
+
             if (String.IsNullOrEmpty(tbIme.Text) ||
                 String.IsNullOrEmpty(tbPrezime.Text) ||
                 String.IsNullOrEmpty(tbEmail.Text) ||
@@ -96,15 +97,14 @@ namespace CGMV
             else
             {
                 //U ovom segmentu koda nesto ne stima
-                //pretpostavka: if detalji0[] == ime, detalji[0] = ime,
-                //dvaput isto ime? sta ako je korisnik izmjenio ime? onda nece nis spremiti
                 string[] linije = File.ReadAllLines(PATH);
+                bool JeAdmin = false;
 
                 StringBuilder sb = new StringBuilder();
                 foreach (string line in linije)
                 {
                     string[] detalji = line.Split('|');
-                    if (detalji[0] == ime)
+                    if (detalji[0] == predavacIme)
                     {
                         detalji[0] = ime;
                         detalji[1] = prezime;
