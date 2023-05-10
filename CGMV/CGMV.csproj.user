@@ -19,10 +19,25 @@
     <Compile Update="ObrisiKolegij.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ObrisiObavijest.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="ObrisiPredavaca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Predavac_Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UrediKolegij.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UrediKolegijGlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UrediObavijest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UrediObavijestGlavnaForma.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UrediPredavaca.cs">

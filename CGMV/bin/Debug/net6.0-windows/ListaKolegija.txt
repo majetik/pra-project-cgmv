@@ -1,2 +1,1 @@
-Matematika|1
-Fizika1|1
+Proba|Proba
