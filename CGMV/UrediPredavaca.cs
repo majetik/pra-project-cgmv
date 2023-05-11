@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entiteti;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,51 +30,30 @@ namespace CGMV
 
         private void UrediPredavaca_Load(object sender, EventArgs e)
         {
-            List<string> predavaci = new List<string>();
-
-            try
+            List<Osoba> osobe = new List<Osoba>();
+            string[] sveosobe = File.ReadAllLines(PATH);
+            foreach (var item in sveosobe)
             {
-                using (StreamReader sr = new StreamReader(PATH))
-                {
-                    while (!sr.EndOfStream)
-                    {
-
-                        string linija = sr.ReadLine();
-                        string[] detalji = linija.Split('|');
-
-                        string ime = detalji[0];
-                        string prezime = detalji[1];
-
-                        predavaci.Add($"{ime} {prezime}");
-
-                    }
-
-                    cbPredavaci.DataSource = predavaci;
-
-                }
+                osobe.Add(Osoba.ParseFromFileLine(item));
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            cbPredavaci.DataSource = osobe;
         }
 
         private void btnNastavi_Click(object sender, EventArgs e)
         {
             if (cbPredavaci.SelectedIndex == -1)
             {
-                MessageBox.Show("Odaberite predavača");
+                MessageBox.Show("Odaberite Predavača");
             }
             else
             {
                 string odabraniPredavac = cbPredavaci.SelectedItem.ToString();
-
-                UrediPredavacaGlavnaForma urediOdabranogPredavaca = new UrediPredavacaGlavnaForma(odabraniPredavac);
-                urediOdabranogPredavaca.Show();
-                urediOdabranogPredavaca.BringToFront();
-
+                UrediPredavacaGlavnaForma uredipredavacaGlavnaForma = new(odabraniPredavac);
+                uredipredavacaGlavnaForma.Show();
+                uredipredavacaGlavnaForma.BringToFront();
                 this.Hide();
             }
         }
+        
     }
 }

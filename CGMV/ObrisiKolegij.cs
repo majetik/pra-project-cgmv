@@ -49,25 +49,31 @@ namespace CGMV
             foreach (string line in linije)
             {
                 string[] dijelovi = line.Split(SEPARATOR);
-                if (!(dijelovi[0] == CMOdaberiKolegij.Text && dijelovi[1] == CMOdaberiKolegij.Text))
+                if (!(dijelovi[0] == CMOdaberiKolegij.Text))
                 {
                     noviKontent.AppendLine(line);
                 }
             }
-
             try
             {
                 File.WriteAllText("ListaKolegija.txt", noviKontent.ToString());
-
-                CMOdaberiKolegij.Items.Remove(CMOdaberiKolegij.SelectedItem);
-
-                DialogResult result = MessageBox.Show("Kolegij uspješno obrisan!", "Confirmation", MessageBoxButtons.OK);
-
+                //CMOdaberiKolegij.Items.Remove(CMOdaberiKolegij.SelectedItem);
+                DialogResult result = MessageBox.Show("Kolegij uspješno obrisan!", "Confirmation",
+                    MessageBoxButtons.OK);
+                List<Kolegij> kolegiji = new List<Kolegij>();
+                string[] svikolegiji = File.ReadAllLines(PATH);
+                foreach (var item in svikolegiji)
+                {
+                    kolegiji.Add(Kolegij.ParseFromFileLine(item));
+                }
+                CMOdaberiKolegij.DataSource = kolegiji;
+                /*
                 Administrator_Pocetna admin = new Administrator_Pocetna();
                 admin.Show();
                 admin.BringToFront();
 
                 this.Hide();
+                */
             }
             catch (Exception ex)
             {

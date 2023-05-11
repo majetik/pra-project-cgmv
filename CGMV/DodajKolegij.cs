@@ -19,18 +19,10 @@ namespace CGMV
         public DodajKolegij()
         {
             InitializeComponent();
+            LoadData();
         }
 
-        private void BtnNatrag_Click(object sender, EventArgs e)
-        {
-            Administrator_Pocetna adminPocetna = new();
-            adminPocetna.Show();
-            adminPocetna.BringToFront();
-
-            this.Close();
-        }
-
-        private void BtnDodaj_Click(object sender, EventArgs e)
+        private void LoadData()
         {
             Kolegij kolegij1 = new Kolegij();
             string[] file = File.ReadAllLines(PATH);
@@ -46,6 +38,21 @@ namespace CGMV
             {
                 MessageBox.Show(em.Message);
             }
+        }
+
+        private void BtnNatrag_Click(object sender, EventArgs e)
+        {
+            Administrator_Pocetna adminPocetna = new();
+            adminPocetna.Show();
+            adminPocetna.BringToFront();
+
+            this.Close();
+        }
+
+        private void BtnDodaj_Click(object sender, EventArgs e)
+        {
+
+
             if (!formValid())
             {
                 return;
@@ -54,6 +61,7 @@ namespace CGMV
             {
                 return;
             }
+
             Kolegij kolegij = new()
             {
                 Naziv = TBImeKolegija.Text,
@@ -108,6 +116,7 @@ namespace CGMV
             }
             return true;
         }
+
 
     }
 }

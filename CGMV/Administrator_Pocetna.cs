@@ -98,5 +98,29 @@ namespace CGMV
             urediPredavaca.BringToFront();
             this.Close();
         }
+
+        private void btnUrediKolegij_Click(object sender, EventArgs e)
+        {
+            UrediKolegij urediKolegij = new();
+            urediKolegij.Show();
+            urediKolegij.BringToFront();
+            this.Close();
+        }
+
+        private void btnObrisiObavijesti_Click(object sender, EventArgs e)
+        {
+            ObrisiObavijest obrisiObavijest = new();
+            obrisiObavijest.Show();
+            obrisiObavijest.BringToFront();
+            this.Close();
+        }
+
+        private void btnUrediObavijesti_Click(object sender, EventArgs e)
+        {
+            UrediObavijest urediObavijest = new();
+            urediObavijest.Show();
+            urediObavijest.BringToFront();
+            this.Close();
+        }
     }
 }

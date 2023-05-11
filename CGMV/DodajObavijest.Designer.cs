@@ -28,171 +28,171 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            BtnNatrag = new Button();
-            BtnKreirajObavijest = new Button();
-            CBOdabirKolegija = new ComboBox();
-            TBNaslov = new TextBox();
-            TBOpis = new TextBox();
-            CBKreiraoObavijest = new ComboBox();
-            label5 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.BtnNatrag = new System.Windows.Forms.Button();
+            this.BtnKreirajObavijest = new System.Windows.Forms.Button();
+            this.CBOdabirKolegija = new System.Windows.Forms.ComboBox();
+            this.TBNaslov = new System.Windows.Forms.TextBox();
+            this.TBOpis = new System.Windows.Forms.TextBox();
+            this.CBKreiraoObavijest = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.Algebra_logo;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(100, 50);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = global::CGMV.Properties.Resources.Algebra_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = Properties.Resources.Algebra_logo_2;
-            pictureBox2.Location = new Point(254, 399);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(250, 50);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = global::CGMV.Properties.Resources.Algebra_logo_2;
+            this.pictureBox2.Location = new System.Drawing.Point(254, 399);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(250, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(22, 76);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 15);
-            label1.TabIndex = 2;
-            label1.Text = "Odabir kolegija:";
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(22, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Odabir kolegija:";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.Transparent;
-            label2.Location = new Point(22, 130);
-            label2.Name = "label2";
-            label2.Size = new Size(129, 15);
-            label2.TabIndex = 3;
-            label2.Text = "Unesi naslov obavijesti:";
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(22, 130);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Unesi naslov obavijesti:";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(22, 185);
-            label3.Name = "label3";
-            label3.Size = new Size(61, 15);
-            label3.TabIndex = 4;
-            label3.Text = "Unesi opis";
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(22, 185);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Unesi opis";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(22, 283);
-            label4.Name = "label4";
-            label4.Size = new Size(97, 15);
-            label4.TabIndex = 5;
-            label4.Text = "Kreirao obavijest:";
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(22, 283);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(97, 15);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Kreirao obavijest:";
             // 
             // BtnNatrag
             // 
-            BtnNatrag.Location = new Point(22, 366);
-            BtnNatrag.Name = "BtnNatrag";
-            BtnNatrag.Size = new Size(75, 23);
-            BtnNatrag.TabIndex = 6;
-            BtnNatrag.Text = "Natrag";
-            BtnNatrag.UseVisualStyleBackColor = true;
-            BtnNatrag.Click += BtnNatrag_Click;
+            this.BtnNatrag.Location = new System.Drawing.Point(22, 366);
+            this.BtnNatrag.Name = "BtnNatrag";
+            this.BtnNatrag.Size = new System.Drawing.Size(75, 23);
+            this.BtnNatrag.TabIndex = 6;
+            this.BtnNatrag.Text = "Natrag";
+            this.BtnNatrag.UseVisualStyleBackColor = true;
+            this.BtnNatrag.Click += new System.EventHandler(this.BtnNatrag_Click);
             // 
             // BtnKreirajObavijest
             // 
-            BtnKreirajObavijest.Location = new Point(603, 366);
-            BtnKreirajObavijest.Name = "BtnKreirajObavijest";
-            BtnKreirajObavijest.Size = new Size(106, 23);
-            BtnKreirajObavijest.TabIndex = 7;
-            BtnKreirajObavijest.Text = "Kreiraj obavijest";
-            BtnKreirajObavijest.UseVisualStyleBackColor = true;
+            this.BtnKreirajObavijest.Location = new System.Drawing.Point(603, 366);
+            this.BtnKreirajObavijest.Name = "BtnKreirajObavijest";
+            this.BtnKreirajObavijest.Size = new System.Drawing.Size(106, 23);
+            this.BtnKreirajObavijest.TabIndex = 7;
+            this.BtnKreirajObavijest.Text = "Kreiraj obavijest";
+            this.BtnKreirajObavijest.UseVisualStyleBackColor = true;
             // 
             // CBOdabirKolegija
             // 
-            CBOdabirKolegija.FormattingEnabled = true;
-            CBOdabirKolegija.Location = new Point(22, 94);
-            CBOdabirKolegija.Name = "CBOdabirKolegija";
-            CBOdabirKolegija.Size = new Size(553, 23);
-            CBOdabirKolegija.TabIndex = 8;
+            this.CBOdabirKolegija.FormattingEnabled = true;
+            this.CBOdabirKolegija.Location = new System.Drawing.Point(22, 94);
+            this.CBOdabirKolegija.Name = "CBOdabirKolegija";
+            this.CBOdabirKolegija.Size = new System.Drawing.Size(553, 23);
+            this.CBOdabirKolegija.TabIndex = 8;
             // 
             // TBNaslov
             // 
-            TBNaslov.Location = new Point(22, 148);
-            TBNaslov.Name = "TBNaslov";
-            TBNaslov.Size = new Size(553, 23);
-            TBNaslov.TabIndex = 9;
+            this.TBNaslov.Location = new System.Drawing.Point(22, 148);
+            this.TBNaslov.Name = "TBNaslov";
+            this.TBNaslov.Size = new System.Drawing.Size(553, 23);
+            this.TBNaslov.TabIndex = 9;
             // 
             // TBOpis
             // 
-            TBOpis.Location = new Point(22, 203);
-            TBOpis.Multiline = true;
-            TBOpis.Name = "TBOpis";
-            TBOpis.Size = new Size(553, 68);
-            TBOpis.TabIndex = 10;
+            this.TBOpis.Location = new System.Drawing.Point(22, 203);
+            this.TBOpis.Multiline = true;
+            this.TBOpis.Name = "TBOpis";
+            this.TBOpis.Size = new System.Drawing.Size(553, 68);
+            this.TBOpis.TabIndex = 10;
             // 
             // CBKreiraoObavijest
             // 
-            CBKreiraoObavijest.FormattingEnabled = true;
-            CBKreiraoObavijest.Location = new Point(22, 313);
-            CBKreiraoObavijest.Name = "CBKreiraoObavijest";
-            CBKreiraoObavijest.Size = new Size(553, 23);
-            CBKreiraoObavijest.TabIndex = 11;
+            this.CBKreiraoObavijest.FormattingEnabled = true;
+            this.CBKreiraoObavijest.Location = new System.Drawing.Point(22, 313);
+            this.CBKreiraoObavijest.Name = "CBKreiraoObavijest";
+            this.CBKreiraoObavijest.Size = new System.Drawing.Size(553, 23);
+            this.CBKreiraoObavijest.TabIndex = 11;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.Transparent;
-            label5.Location = new Point(307, 26);
-            label5.Name = "label5";
-            label5.Size = new Size(149, 25);
-            label5.TabIndex = 12;
-            label5.Text = "Dodaj obavijest";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(307, 26);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(149, 25);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Dodaj obavijest";
             // 
             // DodajObavijest
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(784, 461);
-            Controls.Add(label5);
-            Controls.Add(CBKreiraoObavijest);
-            Controls.Add(TBOpis);
-            Controls.Add(TBNaslov);
-            Controls.Add(CBOdabirKolegija);
-            Controls.Add(BtnKreirajObavijest);
-            Controls.Add(BtnNatrag);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
-            Name = "DodajObavijest";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "DodajObavijest";
-            Load += DodajObavijest_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.CBKreiraoObavijest);
+            this.Controls.Add(this.TBOpis);
+            this.Controls.Add(this.TBNaslov);
+            this.Controls.Add(this.CBOdabirKolegija);
+            this.Controls.Add(this.BtnKreirajObavijest);
+            this.Controls.Add(this.BtnNatrag);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "DodajObavijest";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DodajObavijest";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

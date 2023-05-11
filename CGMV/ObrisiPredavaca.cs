@@ -43,33 +43,31 @@ namespace CGMV
 
         private void BtnObriši_Click(object sender, EventArgs e)
         {
-            List<string> linije = File.ReadAllLines("ListaPredavaca.txt").ToList();
+            List<string> linije = File.ReadAllLines(PATH).ToList();
 
             StringBuilder noviKontent = new StringBuilder();
             foreach (string line in linije)
             {
                 string[] dijelovi = line.Split(SEPARATOR);
-                if (!(dijelovi[0] == cbPredavaci.Text && dijelovi[1] == cbPredavaci.Text))
+                string[] imeiprezime = cbPredavaci.Text.Split(' ');
+                if (!(dijelovi[0] == imeiprezime[0] && dijelovi[1] == imeiprezime[1]))
                 {
-                    noviKontent.AppendLine(line); // Add the line to the new contents.
+                    noviKontent.AppendLine(line);
                 }
             }
-
             try
             {
-                // Write the updated contents to the file.
-                File.WriteAllText("ListaPredavaca.txt", noviKontent.ToString());
-
-                // Remove the selected item from the combo box.
-                cbPredavaci.Items.Remove(cbPredavaci.SelectedItem);
-
-                DialogResult result = MessageBox.Show("Predavač uspješno obrisan", "Confirmation", MessageBoxButtons.OK);
-
-                Administrator_Pocetna admin = new Administrator_Pocetna();
-                admin.Show();
-                admin.BringToFront();
-
-                this.Hide();
+                File.WriteAllText(PATH, noviKontent.ToString());
+                DialogResult result = MessageBox.Show("Predavač uspješno obrisan!", "Confirmation",
+                    MessageBoxButtons.OK);
+                List<Osoba> predavaci = new List<Osoba>();
+                string[] svikolegiji = File.ReadAllLines(PATH);
+                foreach (var item in svikolegiji)
+                {
+                    predavaci.Add(Osoba.ParseFromFileLine(item));
+                }
+                cbPredavaci.DataSource = predavaci;
+                
             }
             catch (Exception ex)
             {

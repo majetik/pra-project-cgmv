@@ -14,7 +14,7 @@ namespace Entiteti
         public Osoba Predavac { get; set; }
         public override string ToString()
         {
-            return $"{Naziv}, sifra: {Sifra}";
+            return $"{Naziv}";
         }
 
         public override int GetHashCode()
