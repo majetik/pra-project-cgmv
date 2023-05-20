@@ -127,11 +127,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(411, 23);
+            this.label3.Location = new System.Drawing.Point(392, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 25);
+            this.label3.Size = new System.Drawing.Size(145, 30);
             this.label3.TabIndex = 83;
             this.label3.Text = "Uredi kolegij";
             // 

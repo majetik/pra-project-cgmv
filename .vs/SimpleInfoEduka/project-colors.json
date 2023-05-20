@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0dbf27b9-4de9-48b8-9e57-ae242f113863": {
+      "ProjectGuid": "0dbf27b9-4de9-48b8-9e57-ae242f113863",
+      "DisplayName": "CGMV",
+      "ColorIndex": 0
+    },
+    "24005223-4fd7-4355-b597-68f776f7a30d": {
+      "ProjectGuid": "24005223-4fd7-4355-b597-68f776f7a30d",
+      "DisplayName": "Entiteti",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

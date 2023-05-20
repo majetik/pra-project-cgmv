@@ -4,10 +4,8 @@ namespace CGMV
 {
     public partial class Form1 : Form
     {
-
         private const string PATH = "ListaPredavaca.txt";
         private const char DEL = '|';
-
         Osoba Admin = new()
         {
             Ime = "Pero",
@@ -32,27 +30,25 @@ namespace CGMV
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            ProvjeraKredencijala();
+            Validation();
         }
 
         private void TbEmail_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                ProvjeraKredencijala();
+                Validation();
             }
         }
-
         private void TbLozinka_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                ProvjeraKredencijala();
+                Validation();
             }
         }
 
-
-        private void ProvjeraKredencijala()
+        private void Validation()
         {
             string[] lines = File.ReadAllLines(PATH);
             bool uspjeh = false;
@@ -88,7 +84,6 @@ namespace CGMV
             }
 
         }
-
         private void ClearForm()
         {
             foreach (Control control in Controls)

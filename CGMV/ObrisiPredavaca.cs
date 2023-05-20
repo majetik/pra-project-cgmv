@@ -19,7 +19,14 @@ namespace CGMV
         {
             InitializeComponent();
         }
+        private void BtnNatrag_Click(object sender, EventArgs e)
+        {
 
+            Administrator_Pocetna admin = new Administrator_Pocetna();
+            admin.Show();
+            admin.BringToFront();
+            this.Hide();
+        }
         private void ObrisiPredavaca_Load(object sender, EventArgs e)
         {
             List<Osoba> osobe = new List<Osoba>();
@@ -29,16 +36,6 @@ namespace CGMV
                 osobe.Add(Osoba.ParseFromFileLine(item));
             }
             cbPredavaci.DataSource = osobe;
-        }
-
-        private void BtnNatrag_Click(object sender, EventArgs e)
-        {
-
-            Administrator_Pocetna admin = new Administrator_Pocetna();
-            admin.Show();
-            admin.BringToFront();
-
-            this.Hide();
         }
 
         private void BtnObriši_Click(object sender, EventArgs e)
@@ -67,7 +64,6 @@ namespace CGMV
                     predavaci.Add(Osoba.ParseFromFileLine(item));
                 }
                 cbPredavaci.DataSource = predavaci;
-                
             }
             catch (Exception ex)
             {

@@ -28,11 +28,6 @@ namespace CGMV
         {
             LoadData();
             InsertNew();
-
-            Administrator_Pocetna administrator_Pocetna = new Administrator_Pocetna();
-            administrator_Pocetna.Show();
-            administrator_Pocetna.BringToFront();
-            this.Close();
         }
 
         private void InsertNew()
@@ -99,6 +94,10 @@ namespace CGMV
                 File.WriteAllText("ListaKolegija.txt", noviKontent.ToString());
                 DialogResult result = MessageBox.Show("Kolegij uspješno promijenjen!", "Confirmation",
                     MessageBoxButtons.OK);
+                Administrator_Pocetna administrator_Pocetna = new Administrator_Pocetna();
+                administrator_Pocetna.Show();
+                administrator_Pocetna.BringToFront();
+                this.Close();
             }
             catch (Exception ex)
             {

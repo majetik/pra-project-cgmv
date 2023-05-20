@@ -23,9 +23,6 @@ namespace CGMV
             btnOdjava.FlatStyle = FlatStyle.Flat;
             btnOdjava.FlatAppearance.BorderSize = 0;
 
-            // micanje border linije oko textfield-a
-            tbDobrodosli.BorderStyle = BorderStyle.None;
-
             foreach (Control control in pnlLinkovi.Controls)
             {
                 if (control is Button)
@@ -44,7 +41,6 @@ namespace CGMV
             Form1 pocetnaStranica = new();
             pocetnaStranica.Show();
             pocetnaStranica.BringToFront();
-
             this.Close();
         }
 

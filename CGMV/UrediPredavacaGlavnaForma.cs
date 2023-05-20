@@ -118,7 +118,6 @@ namespace CGMV
             UrediPredavaca urediPredavaca = new UrediPredavaca();
             urediPredavaca.Show();
             urediPredavaca.BringToFront();
-
             this.Hide();
         }
 

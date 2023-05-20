@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Predavac_Pocetna));
             this.btnOdjava = new System.Windows.Forms.Button();
-            this.tbDobrodosli = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLinkovi = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -39,6 +38,7 @@
             this.btnUrediObavijesti = new System.Windows.Forms.Button();
             this.btnObrisiObavijesti = new System.Windows.Forms.Button();
             this.btnPopisSvihObavijesti = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLinkovi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -57,18 +57,6 @@
             this.btnOdjava.Text = "Odjava";
             this.btnOdjava.UseVisualStyleBackColor = false;
             this.btnOdjava.Click += new System.EventHandler(this.btnOdjava_Click);
-            // 
-            // tbDobrodosli
-            // 
-            this.tbDobrodosli.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbDobrodosli.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDobrodosli.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDobrodosli.Location = new System.Drawing.Point(286, 19);
-            this.tbDobrodosli.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbDobrodosli.Name = "tbDobrodosli";
-            this.tbDobrodosli.Size = new System.Drawing.Size(212, 32);
-            this.tbDobrodosli.TabIndex = 9;
-            this.tbDobrodosli.Text = "Dobro došli - Predavač";
             // 
             // pictureBox1
             // 
@@ -162,14 +150,25 @@
             this.btnPopisSvihObavijesti.Text = "Popis svih obavijesti";
             this.btnPopisSvihObavijesti.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(257, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(250, 30);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Dobro došli - predavač";
+            // 
             // Predavac_Pocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOdjava);
-            this.Controls.Add(this.tbDobrodosli);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlLinkovi);
             this.Name = "Predavac_Pocetna";
@@ -186,7 +185,6 @@
         #endregion
 
         private Button btnOdjava;
-        private TextBox tbDobrodosli;
         private PictureBox pictureBox1;
         private Panel pnlLinkovi;
         private PictureBox pictureBox3;
@@ -195,5 +193,6 @@
         private Button btnUrediObavijesti;
         private Button btnObrisiObavijesti;
         private Button btnPopisSvihObavijesti;
+        private Label label1;
     }
 }

@@ -22,6 +22,14 @@ namespace CGMV
             LoadData();
         }
 
+        private void BtnNatrag_Click(object sender, EventArgs e)
+        {
+            Administrator_Pocetna adminPocetna = new();
+            adminPocetna.Show();
+            adminPocetna.BringToFront();
+            this.Close();
+        }
+
         private void LoadData()
         {
             Kolegij kolegij1 = new Kolegij();
@@ -40,24 +48,13 @@ namespace CGMV
             }
         }
 
-        private void BtnNatrag_Click(object sender, EventArgs e)
-        {
-            Administrator_Pocetna adminPocetna = new();
-            adminPocetna.Show();
-            adminPocetna.BringToFront();
-
-            this.Close();
-        }
-
         private void BtnDodaj_Click(object sender, EventArgs e)
         {
-
-
             if (!formValid())
             {
                 return;
             }
-            if (!kolegijPostoji())
+            if (!collegeexists())
             {
                 return;
             }
@@ -67,7 +64,9 @@ namespace CGMV
                 Naziv = TBImeKolegija.Text,
                 Sifra = TBSifraKolegija.Text
             };
+
             kolegiji.Add(kolegij);
+
             try
             {
                 File.WriteAllLines(PATH, kolegiji.Select(k => k.FormatForFileLine()));
@@ -78,7 +77,7 @@ namespace CGMV
                 MessageBox.Show(me.Message);
             }
         }
-        private bool kolegijPostoji()
+        private bool collegeexists()
         {
             List<Kolegij> kolegiji = new List<Kolegij>();
             string[] detalji;
