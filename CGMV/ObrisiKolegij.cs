@@ -26,8 +26,7 @@ namespace CGMV
             Administrator_Pocetna admin = new Administrator_Pocetna();
             admin.Show();
             admin.BringToFront();
-
-            this.Hide();
+            this.Close();
         }
 
         private void ObrisiKolegij_Load(object sender, EventArgs e)
@@ -44,7 +43,6 @@ namespace CGMV
         private void BtnObrisi_Click(object sender, EventArgs e)
         {
             List<string> linije = File.ReadAllLines("ListaKolegija.txt").ToList();
-
             StringBuilder noviKontent = new StringBuilder();
             foreach (string line in linije)
             {
@@ -57,7 +55,6 @@ namespace CGMV
             try
             {
                 File.WriteAllText("ListaKolegija.txt", noviKontent.ToString());
-                //CMOdaberiKolegij.Items.Remove(CMOdaberiKolegij.SelectedItem);
                 DialogResult result = MessageBox.Show("Kolegij uspješno obrisan!", "Confirmation",
                     MessageBoxButtons.OK);
                 List<Kolegij> kolegiji = new List<Kolegij>();
@@ -67,13 +64,6 @@ namespace CGMV
                     kolegiji.Add(Kolegij.ParseFromFileLine(item));
                 }
                 CMOdaberiKolegij.DataSource = kolegiji;
-                /*
-                Administrator_Pocetna admin = new Administrator_Pocetna();
-                admin.Show();
-                admin.BringToFront();
-
-                this.Hide();
-                */
             }
             catch (Exception ex)
             {

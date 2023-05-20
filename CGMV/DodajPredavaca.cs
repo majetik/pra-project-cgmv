@@ -27,7 +27,6 @@ namespace CGMV
             Administrator_Pocetna adminPocetna = new();
             adminPocetna.Show();
             adminPocetna.BringToFront();
-
             this.Close();
         }
 
@@ -52,6 +51,11 @@ namespace CGMV
                 return;
             }
 
+            if (!userexists())
+            {
+                return;
+            }
+
             Osoba osoba = new()
             {
                 Ime = tbImePredavaca.Text,
@@ -71,6 +75,34 @@ namespace CGMV
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show("Predavač uspješno dodan!");
+        }
+
+        private bool userexists()
+        {
+            List<Osoba> predavaci = new List<Osoba>();
+            string[] detalji;
+            try
+            {
+                detalji = File.ReadAllLines(PATH);
+                foreach (var item in detalji)
+                {
+                    predavaci.Add(Osoba.ParseFromFileLine(item));
+                }
+                foreach (var item in predavaci)
+                {
+                    if (item.Ime == tbImePredavaca.Text && item.Prezime == tbPrezimePredavaca.Text)
+                    {
+                        MessageBox.Show("Predavač sa tim imenom i prezimenom već postoji, nemoguć unos!");
+                        return false;
+                    }
+                }
+                return true;
+            }
+            catch (Exception ew)
+            {
+                MessageBox.Show(ew.Message);
+                return false;
+            }
         }
 
         private bool formValid()

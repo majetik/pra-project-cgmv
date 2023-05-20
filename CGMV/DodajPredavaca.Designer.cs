@@ -42,8 +42,8 @@
             this.tbImePredavaca = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tbDodajPredavaca = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -173,18 +173,6 @@
             this.pictureBox3.TabIndex = 48;
             this.pictureBox3.TabStop = false;
             // 
-            // tbDodajPredavaca
-            // 
-            this.tbDodajPredavaca.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbDodajPredavaca.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDodajPredavaca.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDodajPredavaca.Location = new System.Drawing.Point(360, 16);
-            this.tbDodajPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbDodajPredavaca.Name = "tbDodajPredavaca";
-            this.tbDodajPredavaca.Size = new System.Drawing.Size(158, 32);
-            this.tbDodajPredavaca.TabIndex = 47;
-            this.tbDodajPredavaca.Text = "Dodaj predavača";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -196,12 +184,24 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(305, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(188, 30);
+            this.label6.TabIndex = 61;
+            this.label6.Text = "Dodaj predavača";
+            // 
             // DodajPredavaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnDodajPredavača);
             this.Controls.Add(this.btnNatrag);
             this.Controls.Add(this.tbPotvrdiLozinku);
@@ -215,7 +215,6 @@
             this.Controls.Add(this.tbImePredavaca);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.tbDodajPredavaca);
             this.Controls.Add(this.pictureBox1);
             this.Name = "DodajPredavaca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -242,7 +241,7 @@
         private TextBox tbImePredavaca;
         private Label label1;
         private PictureBox pictureBox3;
-        private TextBox tbDodajPredavaca;
         private PictureBox pictureBox1;
+        private Label label6;
     }
 }

@@ -34,8 +34,8 @@
             this.cbPredavaci = new System.Windows.Forms.ComboBox();
             this.lblOdabir = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.tbDodajPredavaca = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             // 
             // cbPredavaci
             // 
+            this.cbPredavaci.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPredavaci.FormattingEnabled = true;
             this.cbPredavaci.Location = new System.Drawing.Point(225, 183);
             this.cbPredavaci.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -94,18 +95,6 @@
             this.pictureBox3.TabIndex = 48;
             this.pictureBox3.TabStop = false;
             // 
-            // tbDodajPredavaca
-            // 
-            this.tbDodajPredavaca.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbDodajPredavaca.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDodajPredavaca.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDodajPredavaca.Location = new System.Drawing.Point(402, 85);
-            this.tbDodajPredavaca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbDodajPredavaca.Name = "tbDodajPredavaca";
-            this.tbDodajPredavaca.Size = new System.Drawing.Size(158, 32);
-            this.tbDodajPredavaca.TabIndex = 47;
-            this.tbDodajPredavaca.Text = "Uredi predavača";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -117,18 +106,29 @@
             this.pictureBox1.TabIndex = 46;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(376, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 30);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Uredi predavača";
+            // 
             // UrediPredavaca
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNastavi);
             this.Controls.Add(this.btnNatrag);
             this.Controls.Add(this.cbPredavaci);
             this.Controls.Add(this.lblOdabir);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.tbDodajPredavaca);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UrediPredavaca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -149,7 +149,7 @@
         private ComboBox cbPredavaci;
         private Label lblOdabir;
         private PictureBox pictureBox3;
-        private TextBox tbDodajPredavaca;
         private PictureBox pictureBox1;
+        private Label label1;
     }
 }

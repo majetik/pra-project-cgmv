@@ -42,16 +42,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(386, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.Size = new System.Drawing.Size(145, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "Uredi kolegij";
             // 
             // cbOdaberiKolegij
             // 
+            this.cbOdaberiKolegij.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOdaberiKolegij.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbOdaberiKolegij.FormattingEnabled = true;
             this.cbOdaberiKolegij.Location = new System.Drawing.Point(177, 166);
             this.cbOdaberiKolegij.Name = "cbOdaberiKolegij";
@@ -60,6 +62,7 @@
             // 
             // btnNatrag
             // 
+            this.btnNatrag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNatrag.Location = new System.Drawing.Point(239, 270);
             this.btnNatrag.Name = "btnNatrag";
             this.btnNatrag.Size = new System.Drawing.Size(75, 23);
@@ -70,6 +73,7 @@
             // 
             // btnNastavi
             // 
+            this.btnNastavi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnNastavi.Location = new System.Drawing.Point(378, 270);
             this.btnNastavi.Name = "btnNastavi";
             this.btnNastavi.Size = new System.Drawing.Size(75, 23);

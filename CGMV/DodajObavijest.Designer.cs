@@ -126,6 +126,7 @@
             // 
             // CBOdabirKolegija
             // 
+            this.CBOdabirKolegija.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBOdabirKolegija.FormattingEnabled = true;
             this.CBOdabirKolegija.Location = new System.Drawing.Point(22, 94);
             this.CBOdabirKolegija.Name = "CBOdabirKolegija";
@@ -149,6 +150,7 @@
             // 
             // CBKreiraoObavijest
             // 
+            this.CBKreiraoObavijest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBKreiraoObavijest.FormattingEnabled = true;
             this.CBKreiraoObavijest.Location = new System.Drawing.Point(22, 313);
             this.CBKreiraoObavijest.Name = "CBKreiraoObavijest";
@@ -158,11 +160,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(307, 26);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 25);
+            this.label5.Size = new System.Drawing.Size(174, 30);
             this.label5.TabIndex = 12;
             this.label5.Text = "Dodaj obavijest";
             // 

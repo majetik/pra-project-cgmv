@@ -20,6 +20,13 @@ namespace CGMV
         {
             InitializeComponent();
         }
+        private void btnNatrag_Click(object sender, EventArgs e)
+        {
+            Administrator_Pocetna administrator_Pocetna = new Administrator_Pocetna();
+            administrator_Pocetna.Show();
+            administrator_Pocetna.BringToFront();
+            this.Close();
+        }
 
         private void UrediKolegij_Load(object sender, EventArgs e)
         {
@@ -30,14 +37,6 @@ namespace CGMV
                 kolegiji.Add(Kolegij.ParseFromFileLine(item));
             }
             cbOdaberiKolegij.DataSource = kolegiji;
-        }
-
-        private void btnNatrag_Click(object sender, EventArgs e)
-        {
-            Administrator_Pocetna administrator_Pocetna = new Administrator_Pocetna();
-            administrator_Pocetna.Show();
-            administrator_Pocetna.BringToFront();
-            this.Hide();
         }
 
         private void btnNastavi_Click(object sender, EventArgs e)

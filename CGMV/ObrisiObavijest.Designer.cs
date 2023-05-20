@@ -60,6 +60,7 @@
             // 
             // CMOdaberiObavijest
             // 
+            this.CMOdaberiObavijest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CMOdaberiObavijest.FormattingEnabled = true;
             this.CMOdaberiObavijest.Location = new System.Drawing.Point(188, 165);
             this.CMOdaberiObavijest.Name = "CMOdaberiObavijest";
@@ -80,11 +81,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(381, 37);
+            this.label1.Location = new System.Drawing.Point(358, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.Size = new System.Drawing.Size(175, 30);
             this.label1.TabIndex = 9;
             this.label1.Text = "Obriši obavijest";
             // 

@@ -46,8 +46,8 @@
             this.btnPopisSvihObavijesti = new System.Windows.Forms.Button();
             this.btnDodajKolegij = new System.Windows.Forms.Button();
             this.btnOdjava = new System.Windows.Forms.Button();
-            this.tbDobrodosli = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlLinkovi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -253,18 +253,6 @@
             this.btnOdjava.UseVisualStyleBackColor = false;
             this.btnOdjava.Click += new System.EventHandler(this.BtnOdjava_Click);
             // 
-            // tbDobrodosli
-            // 
-            this.tbDobrodosli.BackColor = System.Drawing.SystemColors.MenuText;
-            this.tbDobrodosli.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbDobrodosli.ForeColor = System.Drawing.SystemColors.Window;
-            this.tbDobrodosli.Location = new System.Drawing.Point(265, 22);
-            this.tbDobrodosli.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tbDobrodosli.Name = "tbDobrodosli";
-            this.tbDobrodosli.Size = new System.Drawing.Size(255, 32);
-            this.tbDobrodosli.TabIndex = 8;
-            this.tbDobrodosli.Text = "Dobro došli - Administrator";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -276,15 +264,26 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(283, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(296, 30);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Dobro došli - administrator";
+            // 
             // Administrator_Pocetna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlLinkovi);
             this.Controls.Add(this.btnOdjava);
-            this.Controls.Add(this.tbDobrodosli);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Administrator_Pocetna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -317,7 +316,7 @@
         private Button btnPopisSvihObavijesti;
         private Button btnDodajKolegij;
         private Button btnOdjava;
-        private TextBox tbDobrodosli;
         private PictureBox pictureBox1;
+        private Label label1;
     }
 }

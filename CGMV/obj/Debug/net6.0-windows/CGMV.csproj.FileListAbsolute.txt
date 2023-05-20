@@ -4,3 +4,6 @@ C:\Users\Leonardo\Desktop\ProjektCGMV\pra-project-cgmv\CGMV\bin\Debug\net6.0-win
 C:\Users\Leonardo\Desktop\A\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\CGMV.exe
 C:\Users\Leonardo\Desktop\A\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\CGMV.dll
 C:\Users\Leonardo\Desktop\A\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\Entiteti.dll
+C:\Users\programer10.UCIONE\Desktop\PRA\CGMV\bin\Debug\net6.0-windows\CGMV.exe
+C:\Users\programer10.UCIONE\Desktop\PRA\CGMV\bin\Debug\net6.0-windows\CGMV.dll
+C:\Users\programer10.UCIONE\Desktop\PRA\CGMV\bin\Debug\net6.0-windows\Entiteti.dll

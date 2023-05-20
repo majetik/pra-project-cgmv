@@ -24,8 +24,7 @@ namespace CGMV
             Administrator_Pocetna admin = new Administrator_Pocetna();
             admin.Show();
             admin.BringToFront();
-
-            this.Hide();
+            this.Close();
         }
 
         private void UrediPredavaca_Load(object sender, EventArgs e)
