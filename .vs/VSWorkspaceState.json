@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CGMV",
+    "\\Entiteti"
   ],
-  "SelectedNode": "\\SimpleInfoEduka.sln",
+  "SelectedNode": "\\CGMV\\UrediPredavacaGlavnaForma.cs",
   "PreviewInSolutionExplorer": false
 }

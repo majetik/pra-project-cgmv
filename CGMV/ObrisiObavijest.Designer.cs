@@ -47,6 +47,7 @@
             this.BtnObrisi.TabIndex = 13;
             this.BtnObrisi.Text = "Obriši";
             this.BtnObrisi.UseVisualStyleBackColor = true;
+            this.BtnObrisi.Click += new System.EventHandler(this.BtnObrisi_Click);
             // 
             // BtnNatrag
             // 
@@ -125,6 +126,7 @@
             this.Name = "ObrisiObavijest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ObrisiObavijest";
+            this.Load += new System.EventHandler(this.ObrisiObavijest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

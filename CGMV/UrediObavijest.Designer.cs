@@ -47,6 +47,7 @@
             this.BtnNastavi.TabIndex = 20;
             this.BtnNastavi.Text = "Nastavi";
             this.BtnNastavi.UseVisualStyleBackColor = true;
+            this.BtnNastavi.Click += new System.EventHandler(this.BtnNastavi_Click);
             // 
             // BtnNatrag
             // 
@@ -125,6 +126,7 @@
             this.Name = "UrediObavijest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrediObavijest";
+            this.Load += new System.EventHandler(this.UrediObavijest_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

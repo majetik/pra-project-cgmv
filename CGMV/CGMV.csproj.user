@@ -16,6 +16,9 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="ObavijestUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="ObrisiKolegij.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +29,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Predavac_Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PregledSvihObavijesti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SpajanjePredavacaIObavijesti.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UrediKolegij.cs">

@@ -15,6 +15,7 @@ namespace CGMV
     {
         private const string PATH = "ListaPredavaca.txt";
         private const char SEPARATOR = '|';
+        List<Osoba> osobe = new List<Osoba>();
         public ObrisiPredavaca()
         {
             InitializeComponent();
@@ -29,7 +30,6 @@ namespace CGMV
         }
         private void ObrisiPredavaca_Load(object sender, EventArgs e)
         {
-            List<Osoba> osobe = new List<Osoba>();
             string[] sveosobe = File.ReadAllLines(PATH);
             foreach (var item in sveosobe)
             {
@@ -40,6 +40,10 @@ namespace CGMV
 
         private void BtnObriši_Click(object sender, EventArgs e)
         {
+            if (osobe.Count == 0)
+            {
+                return;
+            }
             List<string> linije = File.ReadAllLines(PATH).ToList();
 
             StringBuilder noviKontent = new StringBuilder();

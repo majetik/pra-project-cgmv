@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\programer10.UCIONE\\.nuget\\packages\\": {}
+    "C:\\Users\\Marino\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\programer10.UCIONE\\Desktop\\PRA\\Entiteti\\Entiteti.csproj",
+      "projectUniqueName": "C:\\Users\\Marino\\Desktop\\PRA\\MarinoGulic\\pra-project-cgmv\\Entiteti\\Entiteti.csproj",
       "projectName": "Entiteti",
-      "projectPath": "C:\\Users\\programer10.UCIONE\\Desktop\\PRA\\Entiteti\\Entiteti.csproj",
-      "packagesPath": "C:\\Users\\programer10.UCIONE\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\programer10.UCIONE\\Desktop\\PRA\\Entiteti\\obj\\",
+      "projectPath": "C:\\Users\\Marino\\Desktop\\PRA\\MarinoGulic\\pra-project-cgmv\\Entiteti\\Entiteti.csproj",
+      "packagesPath": "C:\\Users\\Marino\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Marino\\Desktop\\PRA\\MarinoGulic\\pra-project-cgmv\\Entiteti\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\programer10.UCIONE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marino\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

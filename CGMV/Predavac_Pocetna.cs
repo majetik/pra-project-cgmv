@@ -44,5 +44,36 @@ namespace CGMV
             this.Close();
         }
 
+        private void btnPopisSvihObavijesti_Click(object sender, EventArgs e)
+        {
+            PregledSvihObavijesti obavijestiobavijesti = new();
+            obavijestiobavijesti.Show();
+            obavijestiobavijesti.BringToFront();
+            this.Close();
+        }
+
+        private void btnObrisiObavijesti_Click(object sender, EventArgs e)
+        {
+            ObrisiObavijest obrisiObavijest = new();
+            obrisiObavijest.Show();
+            obrisiObavijest.BringToFront();
+            this.Close();
+        }
+
+        private void btnDodajObavijesti_Click(object sender, EventArgs e)
+        {
+            DodajObavijest dodajObavijest = new DodajObavijest();
+            dodajObavijest.Show();
+            dodajObavijest.BringToFront();
+            this.Close();
+        }
+
+        private void btnUrediObavijesti_Click(object sender, EventArgs e)
+        {
+            UrediObavijest urediObavijest = new UrediObavijest();
+            urediObavijest.Show();
+            urediObavijest.BringToFront();
+            this.Close();
+        }
     }
 }
