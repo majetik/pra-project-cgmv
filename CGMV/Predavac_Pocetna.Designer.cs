@@ -116,6 +116,7 @@
             this.btnDodajObavijesti.TabIndex = 49;
             this.btnDodajObavijesti.Text = "Dodaj obavijesti";
             this.btnDodajObavijesti.UseVisualStyleBackColor = true;
+            this.btnDodajObavijesti.Click += new System.EventHandler(this.btnDodajObavijesti_Click);
             // 
             // btnUrediObavijesti
             // 
@@ -127,6 +128,7 @@
             this.btnUrediObavijesti.TabIndex = 50;
             this.btnUrediObavijesti.Text = "Uredi obavijesti";
             this.btnUrediObavijesti.UseVisualStyleBackColor = true;
+            this.btnUrediObavijesti.Click += new System.EventHandler(this.btnUrediObavijesti_Click);
             // 
             // btnObrisiObavijesti
             // 
@@ -138,6 +140,7 @@
             this.btnObrisiObavijesti.TabIndex = 51;
             this.btnObrisiObavijesti.Text = "Obriši obavijesti";
             this.btnObrisiObavijesti.UseVisualStyleBackColor = true;
+            this.btnObrisiObavijesti.Click += new System.EventHandler(this.btnObrisiObavijesti_Click);
             // 
             // btnPopisSvihObavijesti
             // 
@@ -149,6 +152,7 @@
             this.btnPopisSvihObavijesti.TabIndex = 52;
             this.btnPopisSvihObavijesti.Text = "Popis svih obavijesti";
             this.btnPopisSvihObavijesti.UseVisualStyleBackColor = true;
+            this.btnPopisSvihObavijesti.Click += new System.EventHandler(this.btnPopisSvihObavijesti_Click);
             // 
             // label1
             // 

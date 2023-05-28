@@ -5,7 +5,13 @@ namespace CGMV
     public partial class Form1 : Form
     {
         private const string PATH = "ListaPredavaca.txt";
+        private const string PATH4 = "UlogiraniUser.txt";
         private const char DEL = '|';
+
+        public string UlogiraniUser { get; set; }
+
+
+
         Osoba Admin = new()
         {
             Ime = "Pero",
@@ -30,6 +36,7 @@ namespace CGMV
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
+
             Validation();
         }
 
@@ -59,7 +66,8 @@ namespace CGMV
                 if (data[2] == tbEmail.Text && data[3] == tbLozinka.Text)
                 {
                     uspjeh = true;
-
+                    UlogiraniUser = tbEmail.Text;
+                    File.WriteAllText(PATH4, UlogiraniUser);
                     this.Hide();
                     Predavac_Pocetna predavac = new();
                     predavac.Show();
@@ -70,7 +78,7 @@ namespace CGMV
             if (tbEmail.Text == "admin" && tbLozinka.Text == "pwd")
             {
                 uspjeh = true;
-
+                File.WriteAllText(PATH4, "admin");
                 this.Hide();
                 Administrator_Pocetna adminPocetna = new();
                 adminPocetna.Show();
@@ -84,6 +92,8 @@ namespace CGMV
             }
 
         }
+
+
         private void ClearForm()
         {
             foreach (Control control in Controls)

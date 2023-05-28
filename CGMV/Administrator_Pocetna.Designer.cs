@@ -85,6 +85,7 @@
             this.btnDodajKolegijuPredavaca.TabIndex = 46;
             this.btnDodajKolegijuPredavaca.Text = "Dodaj kolegiju predavaca";
             this.btnDodajKolegijuPredavaca.UseVisualStyleBackColor = true;
+            this.btnDodajKolegijuPredavaca.Click += new System.EventHandler(this.btnDodajKolegijuPredavaca_Click);
             // 
             // button23
             // 
@@ -227,6 +228,7 @@
             this.btnPopisSvihObavijesti.TabIndex = 37;
             this.btnPopisSvihObavijesti.Text = "Popis svih obavijesti";
             this.btnPopisSvihObavijesti.UseVisualStyleBackColor = true;
+            this.btnPopisSvihObavijesti.Click += new System.EventHandler(this.btnPopisSvihObavijesti_Click);
             // 
             // btnDodajKolegij
             // 

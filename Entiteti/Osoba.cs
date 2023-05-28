@@ -48,6 +48,8 @@ namespace Entiteti
                 JeAdmin = bool.Parse(details[4])
             };
         }
+
+
     }
 
 }

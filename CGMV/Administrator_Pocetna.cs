@@ -117,5 +117,20 @@ namespace CGMV
             this.Close();
         }
 
+        private void btnPopisSvihObavijesti_Click(object sender, EventArgs e)
+        {
+            PregledSvihObavijesti obavijestiobavijesti = new();
+            obavijestiobavijesti.Show();
+            obavijestiobavijesti.BringToFront();
+            this.Close();
+        }
+
+        private void btnDodajKolegijuPredavaca_Click(object sender, EventArgs e)
+        {
+            SpajanjePredavacaIObavijesti spajanjePredavacaIObavijesti = new();
+            spajanjePredavacaIObavijesti.Show();
+            spajanjePredavacaIObavijesti.BringToFront();
+            this.Close();
+        }
     }
 }

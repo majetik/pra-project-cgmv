@@ -26,15 +26,45 @@ namespace Entiteti
         {
             return base.Equals(obj);
         }
-        public string FormatForFileLine() => $"{Naziv}{DEL}{Sifra}";
+        public string FormatForFileLine()
+        {
+            if (Predavac == null)
+            {
+                return $"{Naziv}{DEL}{Sifra}";
+            }
+            else
+            {
+                return $"{Naziv}{DEL}{Sifra}{DEL}{Predavac.FormatForFileLine()}";
+            }
+        } 
         public static Kolegij ParseFromFileLine(string line)
         {
             string[] details = line.Split(DEL);
-            return new Kolegij()
+            if (details.Length < 3)
             {
-                Naziv = details[0],
-                Sifra = details[1],
-            };
+                return new Kolegij()
+                {
+                    Naziv = details[0],
+                    Sifra = details[1],
+                };
+            }
+            else
+            {
+                return new Kolegij()
+                {
+                    Naziv = details[0],
+                    Sifra = details[1],
+                    Predavac = new Osoba
+                    {
+                        Ime = details[2],
+                        Prezime = details[3],
+                        Email = details[4],
+                        Lozinka = details[5],
+                        JeAdmin = bool.Parse(details[6])
+                    } 
+                };
+            }
+            
         }
     }
 }

@@ -41,6 +41,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpIstekObavijesti = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,22 +54,22 @@
             this.label5.ForeColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(303, 23);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 30);
+            this.label5.Size = new System.Drawing.Size(170, 30);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Dodaj obavijest";
+            this.label5.Text = "Uredi obavijest";
             // 
             // CBKreiraoObavijest
             // 
             this.CBKreiraoObavijest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBKreiraoObavijest.FormattingEnabled = true;
-            this.CBKreiraoObavijest.Location = new System.Drawing.Point(54, 313);
+            this.CBKreiraoObavijest.Location = new System.Drawing.Point(54, 271);
             this.CBKreiraoObavijest.Name = "CBKreiraoObavijest";
             this.CBKreiraoObavijest.Size = new System.Drawing.Size(553, 23);
             this.CBKreiraoObavijest.TabIndex = 24;
             // 
             // TBOpis
             // 
-            this.TBOpis.Location = new System.Drawing.Point(54, 203);
+            this.TBOpis.Location = new System.Drawing.Point(54, 182);
             this.TBOpis.Multiline = true;
             this.TBOpis.Name = "TBOpis";
             this.TBOpis.Size = new System.Drawing.Size(553, 68);
@@ -75,7 +77,7 @@
             // 
             // TBNaslov
             // 
-            this.TBNaslov.Location = new System.Drawing.Point(54, 148);
+            this.TBNaslov.Location = new System.Drawing.Point(54, 138);
             this.TBNaslov.Name = "TBNaslov";
             this.TBNaslov.Size = new System.Drawing.Size(553, 23);
             this.TBNaslov.TabIndex = 22;
@@ -95,8 +97,9 @@
             this.BtnKreirajObavijest.Name = "BtnKreirajObavijest";
             this.BtnKreirajObavijest.Size = new System.Drawing.Size(106, 23);
             this.BtnKreirajObavijest.TabIndex = 20;
-            this.BtnKreirajObavijest.Text = "Kreiraj obavijest";
+            this.BtnKreirajObavijest.Text = "Uredi obavijest";
             this.BtnKreirajObavijest.UseVisualStyleBackColor = true;
+            this.BtnKreirajObavijest.Click += new System.EventHandler(this.BtnKreirajObavijest_Click);
             // 
             // BtnNatrag
             // 
@@ -112,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(54, 283);
+            this.label4.Location = new System.Drawing.Point(54, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 15);
             this.label4.TabIndex = 18;
@@ -122,7 +125,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(54, 185);
+            this.label3.Location = new System.Drawing.Point(54, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 17;
@@ -132,7 +135,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(54, 130);
+            this.label2.Location = new System.Drawing.Point(54, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 15);
             this.label2.TabIndex = 16;
@@ -168,12 +171,31 @@
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(54, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 15);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Datum isteka obavijesti:";
+            // 
+            // dtpIstekObavijesti
+            // 
+            this.dtpIstekObavijesti.Location = new System.Drawing.Point(54, 316);
+            this.dtpIstekObavijesti.Name = "dtpIstekObavijesti";
+            this.dtpIstekObavijesti.Size = new System.Drawing.Size(553, 23);
+            this.dtpIstekObavijesti.TabIndex = 26;
+            // 
             // UrediObavijestGlavnaForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dtpIstekObavijesti);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CBKreiraoObavijest);
             this.Controls.Add(this.TBOpis);
@@ -190,6 +212,7 @@
             this.Name = "UrediObavijestGlavnaForma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrediObavijestGlavnaForma";
+            this.Load += new System.EventHandler(this.UrediObavijestGlavnaForma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -212,5 +235,7 @@
         private Label label1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private Label label6;
+        private DateTimePicker dtpIstekObavijesti;
     }
 }

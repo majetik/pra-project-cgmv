@@ -34,13 +34,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.BtnNatrag = new System.Windows.Forms.Button();
-            this.BtnKreirajObavijest = new System.Windows.Forms.Button();
             this.CBOdabirKolegija = new System.Windows.Forms.ComboBox();
             this.TBNaslov = new System.Windows.Forms.TextBox();
             this.TBOpis = new System.Windows.Forms.TextBox();
             this.CBKreiraoObavijest = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpIstekObavijesti = new System.Windows.Forms.DateTimePicker();
+            this.BtnKreirajObavijest = new System.Windows.Forms.Button();
+            this.BtnNatrag = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -79,7 +81,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(22, 130);
+            this.label2.Location = new System.Drawing.Point(22, 120);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 15);
             this.label2.TabIndex = 3;
@@ -89,7 +91,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(22, 185);
+            this.label3.Location = new System.Drawing.Point(22, 164);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 15);
             this.label3.TabIndex = 4;
@@ -99,30 +101,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(22, 283);
+            this.label4.Location = new System.Drawing.Point(22, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 15);
             this.label4.TabIndex = 5;
             this.label4.Text = "Kreirao obavijest:";
-            // 
-            // BtnNatrag
-            // 
-            this.BtnNatrag.Location = new System.Drawing.Point(22, 366);
-            this.BtnNatrag.Name = "BtnNatrag";
-            this.BtnNatrag.Size = new System.Drawing.Size(75, 23);
-            this.BtnNatrag.TabIndex = 6;
-            this.BtnNatrag.Text = "Natrag";
-            this.BtnNatrag.UseVisualStyleBackColor = true;
-            this.BtnNatrag.Click += new System.EventHandler(this.BtnNatrag_Click);
-            // 
-            // BtnKreirajObavijest
-            // 
-            this.BtnKreirajObavijest.Location = new System.Drawing.Point(603, 366);
-            this.BtnKreirajObavijest.Name = "BtnKreirajObavijest";
-            this.BtnKreirajObavijest.Size = new System.Drawing.Size(106, 23);
-            this.BtnKreirajObavijest.TabIndex = 7;
-            this.BtnKreirajObavijest.Text = "Kreiraj obavijest";
-            this.BtnKreirajObavijest.UseVisualStyleBackColor = true;
             // 
             // CBOdabirKolegija
             // 
@@ -135,14 +118,14 @@
             // 
             // TBNaslov
             // 
-            this.TBNaslov.Location = new System.Drawing.Point(22, 148);
+            this.TBNaslov.Location = new System.Drawing.Point(22, 138);
             this.TBNaslov.Name = "TBNaslov";
             this.TBNaslov.Size = new System.Drawing.Size(553, 23);
             this.TBNaslov.TabIndex = 9;
             // 
             // TBOpis
             // 
-            this.TBOpis.Location = new System.Drawing.Point(22, 203);
+            this.TBOpis.Location = new System.Drawing.Point(22, 182);
             this.TBOpis.Multiline = true;
             this.TBOpis.Name = "TBOpis";
             this.TBOpis.Size = new System.Drawing.Size(553, 68);
@@ -152,7 +135,7 @@
             // 
             this.CBKreiraoObavijest.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBKreiraoObavijest.FormattingEnabled = true;
-            this.CBKreiraoObavijest.Location = new System.Drawing.Point(22, 313);
+            this.CBKreiraoObavijest.Location = new System.Drawing.Point(22, 271);
             this.CBKreiraoObavijest.Name = "CBKreiraoObavijest";
             this.CBKreiraoObavijest.Size = new System.Drawing.Size(553, 23);
             this.CBKreiraoObavijest.TabIndex = 11;
@@ -168,19 +151,58 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Dodaj obavijest";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(22, 297);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 15);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Datum isteka obavijesti:";
+            // 
+            // dtpIstekObavijesti
+            // 
+            this.dtpIstekObavijesti.Location = new System.Drawing.Point(22, 315);
+            this.dtpIstekObavijesti.Name = "dtpIstekObavijesti";
+            this.dtpIstekObavijesti.Size = new System.Drawing.Size(553, 23);
+            this.dtpIstekObavijesti.TabIndex = 15;
+            // 
+            // BtnKreirajObavijest
+            // 
+            this.BtnKreirajObavijest.Location = new System.Drawing.Point(609, 372);
+            this.BtnKreirajObavijest.Name = "BtnKreirajObavijest";
+            this.BtnKreirajObavijest.Size = new System.Drawing.Size(106, 23);
+            this.BtnKreirajObavijest.TabIndex = 18;
+            this.BtnKreirajObavijest.Text = "Kreiraj obavijest";
+            this.BtnKreirajObavijest.UseVisualStyleBackColor = true;
+            this.BtnKreirajObavijest.Click += new System.EventHandler(this.BtnKreirajObavijest_Click);
+            // 
+            // BtnNatrag
+            // 
+            this.BtnNatrag.Location = new System.Drawing.Point(27, 372);
+            this.BtnNatrag.Name = "BtnNatrag";
+            this.BtnNatrag.Size = new System.Drawing.Size(75, 23);
+            this.BtnNatrag.TabIndex = 17;
+            this.BtnNatrag.Text = "Natrag";
+            this.BtnNatrag.UseVisualStyleBackColor = true;
+            this.BtnNatrag.Click += new System.EventHandler(this.BtnNatrag_Click);
+            // 
             // DodajObavijest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.BtnKreirajObavijest);
+            this.Controls.Add(this.BtnNatrag);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.dtpIstekObavijesti);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.CBKreiraoObavijest);
             this.Controls.Add(this.TBOpis);
             this.Controls.Add(this.TBNaslov);
             this.Controls.Add(this.CBOdabirKolegija);
-            this.Controls.Add(this.BtnKreirajObavijest);
-            this.Controls.Add(this.BtnNatrag);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -205,12 +227,14 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Button BtnNatrag;
-        private Button BtnKreirajObavijest;
         private ComboBox CBOdabirKolegija;
         private TextBox TBNaslov;
         private TextBox TBOpis;
         private ComboBox CBKreiraoObavijest;
         private Label label5;
+        private Label label6;
+        private DateTimePicker dtpIstekObavijesti;
+        private Button BtnKreirajObavijest;
+        private Button BtnNatrag;
     }
 }
