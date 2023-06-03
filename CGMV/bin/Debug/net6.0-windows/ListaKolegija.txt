@@ -1,3 +1,2 @@
 Matematika|1|Daniel|Bele|dbele|123|False
-OOP|3
 SIS|6|Pero|Peric|pero@gmail.com|123|False

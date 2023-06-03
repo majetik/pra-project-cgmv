@@ -179,7 +179,16 @@ namespace CGMV
             {
                 kolegiji.Add(Kolegij.ParseFromFileLine(item));
             }
-            CBOdabirKolegija.DataSource = kolegiji;
+            string user = File.ReadAllText(PATH4);
+            List<Kolegij> kolegijiforcb = new List<Kolegij>();
+            for (int i = 0; i < kolegiji.Count; i++)
+            {
+                if (kolegiji[i].Predavac.Email == user)
+                {
+                    kolegijiforcb.Add(kolegiji[i]);
+                }
+            }
+            CBOdabirKolegija.DataSource = kolegijiforcb;
 
 
             List<Osoba> osobe = new List<Osoba>();
