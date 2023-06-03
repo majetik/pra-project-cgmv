@@ -190,7 +190,8 @@ namespace CGMV
             }
             CBOdabirKolegija.DataSource = kolegijiforcb;
 
-
+            //Added comment
+            //Again comment
             List<Osoba> osobe = new List<Osoba>();
             string[] sveosobe = File.ReadAllLines(PATH3);
             foreach (var item in sveosobe)
