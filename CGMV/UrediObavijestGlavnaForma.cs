@@ -164,6 +164,7 @@ namespace CGMV
 
         private void BtnNatrag_Click(object sender, EventArgs e)
         {
+
             UrediObavijest urediObavijest = new();
             urediObavijest.Show();
             urediObavijest.BringToFront();
@@ -172,7 +173,7 @@ namespace CGMV
 
         private void UrediObavijestGlavnaForma_Load(object sender, EventArgs e)
         {
-
+            List<Kolegij> kolegijiforcb = new List<Kolegij>();
             List<Kolegij> kolegiji = new List<Kolegij>();
             string[] svikolegiji = File.ReadAllLines(PATH2);
             foreach (var item in svikolegiji)
@@ -180,25 +181,46 @@ namespace CGMV
                 kolegiji.Add(Kolegij.ParseFromFileLine(item));
             }
             string user = File.ReadAllText(PATH4);
-            List<Kolegij> kolegijiforcb = new List<Kolegij>();
-            for (int i = 0; i < kolegiji.Count; i++)
+            if (user == "admin")
             {
-                if (kolegiji[i].Predavac.Email == user)
+                for (int i = 0; i < kolegiji.Count; i++)
                 {
-                    kolegijiforcb.Add(kolegiji[i]);
+                        kolegijiforcb.Add(kolegiji[i]);
+                }
+                CBOdabirKolegija.DataSource = kolegijiforcb;
+            }
+            else
+            {
+                for (int i = 0; i < kolegiji.Count; i++)
+                {
+                    if (kolegiji[i].Predavac.Email == user)
+                    {
+                        kolegijiforcb.Add(kolegiji[i]);
+                    }
+                    CBOdabirKolegija.DataSource = kolegijiforcb;
                 }
             }
-            CBOdabirKolegija.DataSource = kolegijiforcb;
 
             //Added comment
             //Again comment
+            //---
             List<Osoba> osobe = new List<Osoba>();
             string[] sveosobe = File.ReadAllLines(PATH3);
-            foreach (var item in sveosobe)
+            string ulogiraniuser = File.ReadAllText(PATH4);
+            List<String> ulogirani = new List<String>();
+            ulogirani.Add(ulogiraniuser);
+            if (ulogiraniuser == "admin")
             {
-                osobe.Add(Osoba.ParseFromFileLine(item));
+                foreach (var item in sveosobe)
+                {
+                    osobe.Add(Osoba.ParseFromFileLine(item));
+                }
+                CBKreiraoObavijest.DataSource = osobe;
             }
-            CBKreiraoObavijest.DataSource = osobe;
+            else
+            {
+                CBKreiraoObavijest.DataSource = ulogirani;
+            }
 
 
         }

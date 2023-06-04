@@ -29,8 +29,56 @@ namespace CGMV
 
         private void LoadData()
         {
-            LoadCourses();
-            LoadLecturers();
+            //LoadCourses();
+            //LoadLecturers();
+            List<Kolegij> kolegijiforcb = new List<Kolegij>();
+            List<Kolegij> kolegiji = new List<Kolegij>();
+            string[] svikolegiji = File.ReadAllLines(PATH2);
+            foreach (var item in svikolegiji)
+            {
+                kolegiji.Add(Kolegij.ParseFromFileLine(item));
+            }
+            string user = File.ReadAllText(PATH4);
+            if (user == "admin")
+            {
+                for (int i = 0; i < kolegiji.Count; i++)
+                {
+                    kolegijiforcb.Add(kolegiji[i]);
+                }
+                CBOdabirKolegija.DataSource = kolegijiforcb;
+            }
+            else
+            {
+                for (int i = 0; i < kolegiji.Count; i++)
+                {
+                    if (kolegiji[i].Predavac.Email == user)
+                    {
+                        kolegijiforcb.Add(kolegiji[i]);
+                    }
+                    CBOdabirKolegija.DataSource = kolegijiforcb;
+                }
+            }
+
+            //Added comment
+            //Again comment
+            //---
+            List<Osoba> osobe = new List<Osoba>();
+            string[] sveosobe = File.ReadAllLines(PATH3);
+            string ulogiraniuser = File.ReadAllText(PATH4);
+            List<String> ulogirani = new List<String>();
+            ulogirani.Add(ulogiraniuser);
+            if (ulogiraniuser == "admin")
+            {
+                foreach (var item in sveosobe)
+                {
+                    osobe.Add(Osoba.ParseFromFileLine(item));
+                }
+                CBKreiraoObavijest.DataSource = osobe;
+            }
+            else
+            {
+                CBKreiraoObavijest.DataSource = ulogirani;
+            }
             LoadNotifications();
         }
 
@@ -49,11 +97,21 @@ namespace CGMV
         {
             List<Osoba> osobe = new List<Osoba>();
             string[] sveosobe = File.ReadAllLines(PATH3);
-            foreach (var item in sveosobe)
+            string ulogiraniuser = File.ReadAllText(PATH4);
+            List<String> ulogirani = new List<String>();
+            ulogirani.Add(ulogiraniuser);
+            if (ulogiraniuser == "admin")
             {
-                osobe.Add(Osoba.ParseFromFileLine(item));
+                foreach (var item in sveosobe)
+                {
+                    osobe.Add(Osoba.ParseFromFileLine(item));
+                }
+                CBKreiraoObavijest.DataSource = osobe;
             }
-            CBKreiraoObavijest.DataSource = osobe;
+            else
+            {
+                CBKreiraoObavijest.DataSource = ulogirani;
+            }
         }
 
         private void LoadNotifications()
