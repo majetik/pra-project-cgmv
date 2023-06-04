@@ -9,3 +9,15 @@ C:\Users\programer10.UCIONE\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.cspro
 C:\Users\programer10.UCIONE\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.dll
 C:\Users\programer10.UCIONE\Desktop\PRA\Entiteti\obj\Debug\net6.0\ref\Entiteti.dll
 C:\Users\programer10.UCIONE\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.pdb
+C:\Users\Leonardo\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.deps.json
+C:\Users\Leonardo\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.dll
+C:\Users\Leonardo\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.pdb
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.csproj.AssemblyReference.cache
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfoInputs.cache
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfo.cs
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.csproj.CoreCompileInputs.cache
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.dll
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\refint\Entiteti.dll
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.pdb
+C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\ref\Entiteti.dll
