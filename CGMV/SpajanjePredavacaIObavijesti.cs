@@ -77,9 +77,10 @@ namespace CGMV
                     }
                 }
             }
-
-  
-            
+            Administrator_Pocetna adminPocetna = new();
+            adminPocetna.Show();
+            adminPocetna.BringToFront();
+            this.Close();
         }
     }
 }
