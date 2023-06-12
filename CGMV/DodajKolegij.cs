@@ -76,6 +76,10 @@ namespace CGMV
             {
                 MessageBox.Show(me.Message);
             }
+            Administrator_Pocetna adminPocetna = new();
+            adminPocetna.Show();
+            adminPocetna.BringToFront();
+            this.Close();
         }
         private bool collegeexists()
         {

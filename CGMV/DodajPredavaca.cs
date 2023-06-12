@@ -75,6 +75,11 @@ namespace CGMV
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show("Predavač uspješno dodan!");
+
+            Administrator_Pocetna adminPocetna = new();
+            adminPocetna.Show();
+            adminPocetna.BringToFront();
+            this.Close();
         }
 
         private bool userexists()
