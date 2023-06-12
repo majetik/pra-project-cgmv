@@ -45,11 +45,15 @@ namespace CGMV
                 return;
             }
 
+            Osoba osoba = new Osoba();
+            string mail = CBKreiraoObavijest.Text;
+            osoba.Email = mail;
+
             Obavijest obavijest = new()
             {
                 Naslov = TBNaslov.Text,
                 Opis = TBOpis.Text,
-                Autor = (Osoba)CBKreiraoObavijest.SelectedItem,
+                Autor = osoba,
                 DatumObjave = DateTime.Now,
                 DatumIsteka = dtpIstekObavijesti.Value
             };
@@ -183,9 +187,13 @@ namespace CGMV
             string user = File.ReadAllText(PATH4);
             if (user == "admin")
             {
+                if (kolegiji.Count == 0)
+                {
+                    CBOdabirKolegija.DataSource = "";
+                }
                 for (int i = 0; i < kolegiji.Count; i++)
                 {
-                        kolegijiforcb.Add(kolegiji[i]);
+                    kolegijiforcb.Add(kolegiji[i]);
                 }
                 CBOdabirKolegija.DataSource = kolegijiforcb;
             }
@@ -193,12 +201,16 @@ namespace CGMV
             {
                 for (int i = 0; i < kolegiji.Count; i++)
                 {
+                    if (kolegiji.Count == 0)
+                    {
+                        CBOdabirKolegija.DataSource = "";
+                    }
                     if (kolegiji[i].Predavac.Email == user)
                     {
                         kolegijiforcb.Add(kolegiji[i]);
                     }
-                    CBOdabirKolegija.DataSource = kolegijiforcb;
                 }
+                CBOdabirKolegija.DataSource = kolegijiforcb;
             }
 
             //Added comment
