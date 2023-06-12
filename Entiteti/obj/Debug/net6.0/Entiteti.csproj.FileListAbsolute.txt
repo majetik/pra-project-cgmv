@@ -21,3 +21,15 @@ C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.dll
 C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\refint\Entiteti.dll
 C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.pdb
 C:\Users\Leonardo\Desktop\PRA\Entiteti\obj\Debug\net6.0\ref\Entiteti.dll
+C:\Users\Asus\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.deps.json
+C:\Users\Asus\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.dll
+C:\Users\Asus\Desktop\PRA\Entiteti\bin\Debug\net6.0\Entiteti.pdb
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.AssemblyInfo.cs
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.dll
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\refint\Entiteti.dll
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\Entiteti.pdb
+C:\Users\Asus\Desktop\PRA\Entiteti\obj\Debug\net6.0\ref\Entiteti.dll

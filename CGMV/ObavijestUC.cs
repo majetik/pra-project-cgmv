@@ -22,7 +22,7 @@ namespace CGMV
 
             lblNaslov.Text = obavijest.Naslov;
             tbOpis.Text = obavijest.Opis;
-            lblImeiPrezime.Text = obavijest.Autor.ToString();
+            lblImeiPrezime.Text = obavijest.Autor.Email;
             lblKreiranoDatuma.Text = obavijest.DatumObjave.ToString("dd.MM.yyyy");
             lblIstječeDatuma.Text = obavijest.DatumIsteka.ToString("dd.MM.yyyy");
         }
