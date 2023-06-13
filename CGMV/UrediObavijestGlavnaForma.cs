@@ -36,6 +36,11 @@ namespace CGMV
 
         private void InsertNew()
         {
+            if (CBOdabirKolegija.Items.Count == 0)
+            {
+                MessageBox.Show("Molimo unesite sve potrebne informacije");
+                return;
+            }
             if (!formValid())
             {
                 return;
@@ -201,9 +206,10 @@ namespace CGMV
             {
                 for (int i = 0; i < kolegiji.Count; i++)
                 {
-                    if (kolegiji.Count == 0)
+                    if (kolegiji.Count == 0 || kolegiji[i].Predavac is null)
                     {
-                        CBOdabirKolegija.DataSource = "";
+                        MessageBox.Show("Potrebno je dodati predavača na koljegij!");
+                        break;
                     }
                     if (kolegiji[i].Predavac.Email == user)
                     {
@@ -218,6 +224,8 @@ namespace CGMV
             //---
             List<Osoba> osobe = new List<Osoba>();
             string[] sveosobe = File.ReadAllLines(PATH3);
+
+            List<string> emailovi = new List<string>();
             string ulogiraniuser = File.ReadAllText(PATH4);
             List<String> ulogirani = new List<String>();
             ulogirani.Add(ulogiraniuser);
@@ -227,7 +235,13 @@ namespace CGMV
                 {
                     osobe.Add(Osoba.ParseFromFileLine(item));
                 }
-                CBKreiraoObavijest.DataSource = osobe;
+
+                foreach (var osoba in osobe)
+                {
+                    emailovi.Add(osoba.Email);
+                }
+
+                CBKreiraoObavijest.DataSource = emailovi;
             }
             else
             {

@@ -1,2 +1,3 @@
-Pero|Peric|pero@gmail.com|123|False
-Daniel|Bele|dbele|123|False
+Đani|Pašić|dpasic@racunarstvo.hr|123|False
+Srećko|Baltorić|sbaltor@racunarstvo.hr|123|False
+Daniel|Bele|dbele@racunarstvo.hr|123|False

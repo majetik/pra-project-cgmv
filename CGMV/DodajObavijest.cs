@@ -55,14 +55,16 @@ namespace CGMV
             {
                 for (int i = 0; i < kolegiji.Count; i++)
                 {
-                    if(kolegiji.Count == 0)
+                    if(kolegiji.Count == 0 || kolegiji[i].Predavac is null)
                     {
-                        CBOdabirKolegija.DataSource = "";
+                        MessageBox.Show("Potrebno je dodati predavača na koljegij!");
+                        break;
                     }
-                    if (kolegiji[i].Predavac.Email == user)
+                    else if (kolegiji[i].Predavac.Email == user)
                     {
                         kolegijiforcb.Add(kolegiji[i]);
                     }
+                 
                 }
                 CBOdabirKolegija.DataSource = kolegijiforcb;
             }
@@ -71,6 +73,8 @@ namespace CGMV
             //Again comment
             //---
             List<Osoba> osobe = new List<Osoba>();
+            List<string> emailovi = new List<string>();
+
             string[] sveosobe = File.ReadAllLines(PATH3);
             string ulogiraniuser = File.ReadAllText(PATH4);
             List<String> ulogirani = new List<String>();
@@ -80,8 +84,14 @@ namespace CGMV
                 foreach (var item in sveosobe)
                 {
                     osobe.Add(Osoba.ParseFromFileLine(item));
+                    
                 }
-                CBKreiraoObavijest.DataSource = osobe;
+                foreach (var osoba in osobe)
+                {
+                    emailovi.Add(osoba.Email);
+                }
+
+                CBKreiraoObavijest.DataSource = emailovi;
             }
             else
             {
@@ -164,6 +174,11 @@ namespace CGMV
 
         private void BtnKreirajObavijest_Click(object sender, EventArgs e)
         {
+            if (CBOdabirKolegija.Items.Count == 0)
+            {
+                MessageBox.Show("Molimo unesite sve potrebne informacije");
+                return;
+            }
             if (!formValid())
             {
                 return;
