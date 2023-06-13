@@ -1,3 +1,3 @@
-Matematika|1|Daniel|Bele|dbele|123|False
-SIS|6|Pero|Peric|pero@gmail.com|123|False
-PRA|pra01|a|a|a|123|False
+OOP|1|Đani|Pašić|dpasic@racunarstvo.hr|123|False
+PRA|2|Srećko|Baltorić|sbaltor@racunarstvo.hr|123|False
+JAVA|3|Daniel|Bele|dbele@racunarstvo.hr|123|False

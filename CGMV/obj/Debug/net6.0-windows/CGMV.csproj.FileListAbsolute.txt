@@ -118,3 +118,6 @@ C:\Users\Asus\Desktop\PRA\CGMV\obj\Debug\net6.0-windows\refint\CGMV.dll
 C:\Users\Asus\Desktop\PRA\CGMV\obj\Debug\net6.0-windows\CGMV.pdb
 C:\Users\Asus\Desktop\PRA\CGMV\obj\Debug\net6.0-windows\CGMV.genruntimeconfig.cache
 C:\Users\Asus\Desktop\PRA\CGMV\obj\Debug\net6.0-windows\ref\CGMV.dll
+C:\Users\Marino\Desktop\PRA\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\CGMV.exe
+C:\Users\Marino\Desktop\PRA\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\CGMV.dll
+C:\Users\Marino\Desktop\PRA\pra-project-cgmv\CGMV\bin\Debug\net6.0-windows\Entiteti.dll
